@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOOMIN's Portfolio</title>
+    <meta name="description" content="Portfolio for programmer SOOMIN" />
+    <meta name="author" content="SOOMIN" />
+    <link rel="icon" type="image/png" href="imgs/poodle.png" />
+    <script
+      src="https://kit.fontawesome.com/72f7bcac31.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fab fa-dev"></i>
+        <a href="#"> SOOMIN</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">메인</li>
+        <li class="navbar__menu__item" data-link="#about">소개</li>
+        <li class="navbar__menu__item" data-link="#skills">교육기관</li>
+        <li class="navbar__menu__item" data-link="#work">수강과목</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/poodle.png"
+          alt="SOOMIN's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">진수민 <br />Github 홈페이지</h1>
+        <h2 class="home__description">return development * future;</h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        Hello. I am preparing to become a developer in both fields of App and
+        Web. I have experience working on various projects and have passion for
+        creation and spirit of challenge.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="major__title">Front-end</div>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript,
+            <br />React, Web APIs
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="major__title">Back-end</div>
+          <div class="major__description">
+            Java, Spring, NodeJS
+            <br />Rest APIs
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <div class="major__title">Mobile</div>
+          <div class="major__description">
+            Android, React Native,
+            <br />Java, Kotlin
+          </div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="imgs/jobs/inha-univ-logo.jpg"
+            alt="inha-univ-logo"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Graduated from Inha University, Department of Information and
+              Communication Engineering
+            </p>
+            <p class="job__period">2012 Mar - 2019 Aug</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="imgs/jobs/seoul.png" alt="seoul-logo" class="job__logo" />
+          <div class="job__description">
+            <p class="job__name">
+              Worked as an intern at Seoul City Hall Finance Department
+            </p>
+            <p class="job__period">2020 Sep - 2020 Dec</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>한국폴리텍대학 광명융합기술교육원</h1>
+        <h2>데이터분석과</h2>
+        <iframe
+          width="800"
+          height="500"
+          src="https://www.youtube.com/embed/fFOt80UcN3g"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>수강과목</h1>
+        <h3>과목 리스트</h3>
+        <div class="subject__table">
+          <table>
+            <thead>
+              <tr>
+                <th>수강과목</th>
+                <th>교육기간</th>
+                <th>개요</th>
+                <th>바로가기</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GIT</td>
+                <td>2022.03</td>
+                <td>cli 를 활용한 git 기본사용 방법과 홈페이지 제작</td>
+                <td>
+                  <a
+                    href="https://jinsumin.github.io/git-class-page"
+                    style="color: blue"
+                    >유튜브 영상 페이지</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>JAVA</td>
+                <td>2022.04</td>
+                <td>도서관리 프로그램 제작 미니 프로젝트</td>
+                <td>
+                  <a
+                          href="https://jinsumin.github.io/git-class-page"
+                          style="color: blue"
+                  >유튜브 영상 페이지</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>LINUX</td>
+                <td>2022.04</td>
+                <td>linux programming, 3 tier architecture, app deploy</td>
+                <td>
+                  <a
+                          href="https://jinsumin.github.io/git-class-page"
+                          style="color: blue"
+                  >유튜브 영상 페이지</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Contacts</h1>
+      <h2 class="contact__email">dev.soomin@kakao.com</h2>
+      <h2 class="contact__number">010 4754 7257</h2>
+      <div class="contact__links">
+        <a href="https://github.com/jinsumin" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
