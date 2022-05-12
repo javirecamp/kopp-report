@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homework1.css" media="screen">
+    <link rel="stylesheet" href="homework1.css" media="screen"> <!-- css파일을 만들 수 있는 링크 생성 -->
     <title>이력서</title>
 </head>
 
-<body>
+<body> <!-- 맨 윗단의 제목 설정 -->
     <header>
-        <h1>이력서</h1>
+        <h1>이력서</h1> <!-- 글씨크기는 가장 크게 h1으로 지정 -->
     </header>
 
-    <div class="figure">
-        <img src="./8951_12976_2952.jpg" width="20%">
+    <div class="figure"> <!-- 이미지 첨부를 위해 figure라는 이름을 가진 class 생성 -->
+        <img src="./8951_12976_2952.jpg" width="20%"> 
+	    <!-- 이미지가 작업폴더 내에 있으므로 절대경로 ./로 써주어도 열림, 이미지의 크기를 줄이기 위해 width 사용 -->
     </div>
 
 
 <section2>
-   <br> <h3>필수입력정보</h3>
+   <br> <h3>필수입력정보</h3> <!-- 이력서에 들어갈 첫번째 필수입력정보 섹션 새성 -->
     
-<form action="" method="get">
+<form action="" method="get"> <!-- 여러 입력값들을 넣을 수 있도록 해줌 -->
 
-            <!-- 이름 입력 -->
+           <!-- 한글 성명, 영어 성명 입력 -->
     <label for="name">성명 (한글): </label>
     <input type="text" name="name" type="text" placeholder="김코포" required> <br>
+<!-- 성명은 text 형식
+placeholder="" required를 통해 미리 값을 입력할 수 있게 해줌-->
+
 
     <label for="name">성명 (영어): </label>
     <input type="text" name="name" type="text" placeholder="Kim kopo" required> <br>
@@ -43,9 +47,12 @@
     <input type="email" name="email" type="email" placeholder="naver@gmail.com" required><br>
 
     <button type="submit">SUBMIT</button><br>
+<!-- 미리 입력한 값들을 submit할 수 있는 button 생성 
+html에서 submit button을 누르면 그 값이 입력된 새로운 html이 열린다
+url 맨 끝단에 입력값이 붙어 나오는 것을 보고 확인 가능-->
 
 
- <!-- <style>
+ <!-- <style> css쪽으로 옮김!
     form {
         background-color: lightgrey;
         padding: 10px; /* 배경속성 */
@@ -62,38 +69,42 @@
 
 
 
-<section>
-    <h3>학력사항</h3>
+<section> <!-- 명확한 구분을 위해 새로운 section을 생성해 묶어줌 -->
+    <h3>학력사항</h3>  <!-- 이 section의 제목 설정으로 글씨 크기는 h1>h2>h3 순 -->
 
     <table border="2" width ="1000" height="50" align = "center" >
+	    <!-- semantic한 이력서 작성을 위해 table 형식 사용 
+border= 테두리 만드는 속성 테두리 / width= table의 가로폭 / height는 세로폭 / align은 table의 위치-->
   
     <tr align = "center" bgcolor="lightgrey">
-	<td>기간(년, 월)</td>
-	<td>학교 명</td>
-	<td>졸업여부</td>
+ <!-- table의 위치를 center로 맞춰주고, 배경색을 lightgrey로 설정
+tr: table row의 약자 td: table data의 약자-->
+	<td>기간(년, 월)</td> <!-- table의 첫번째 컬럼명 -->
+	<td>학교 명</td> <!-- table의 첫번째 컬럼명 -->
+	<td>졸업여부</td> <!-- table의 첫번째 컬럼명 -->
     </tr>   
 
-    <tr>
+    <tr> <!-- table의 1행 값을 추가. 입력값을 미리 입력 -->
         <td>
-            <input type="date" name="date" placeholder="2016.03~2021.02" required>
+            <input type="date" name="date" placeholder="2016.03~2021.02" required> <!-- table의 1x1 자리에 입력값을 할당 -->
         </td>
         <td>
-            <input type="text" name="text" placeholder="서울대학교" required>
+            <input type="text" name="text" placeholder="서울대학교" required> <!-- table의 1x2 자리에 입력값을 할당 -->
         </td>
         <td>
-            <input type="text" name="text" placeholder="졸업" required><br>
+            <input type="text" name="text" placeholder="졸업" required><br> <!-- table의 1x3 자리에 입력값을 할당 -->
         </td>
     </tr>
 
-    <tr>
+    <tr> <!-- table의 2행 값을 추가. 입력값을 미리 입력 -->
         <td>
-            <input type="date" name="date" placeholder="2022.03~" required>
+            <input type="date" name="date" placeholder="2022.03~" required> <!-- table의 2x1 자리에 입력값을 할당 -->
         </td>
         <td>
-            <input type="text" name="text" placeholder="코포" required>
+            <input type="text" name="text" placeholder="코포" required> <!-- table의 2x2 자리에 입력값을 할당 -->
         </td>
         <td>
-            <input type="text" name="text" placeholder="재학중" required><br>
+            <input type="text" name="text" placeholder="재학중" required><br> <!-- table의 2x3 자리에 입력값을 할당 -->
         </td>
     </tr>
     </table>
@@ -103,16 +114,14 @@
    <br> <h3>자격사항</h3>
 
     <table border="2" width ="1000" height="50" align = "center" >
+  <!-- semantic한 이력서 작성을 위해 table 형식 사용 
+border= 테두리 만드는 속성 테두리 / width= table의 가로폭 / height는 세로폭 / align은 table의 위치 
   
-        <!--   <tr bgcolor="blue" align ="center">
-	<p><td colspan = "3" span style="color:white">오늘의 수입/지출</td></p>
-    </tr> -->
-  
-    <tr align = "center" bgcolor="lightgrey">
-	<td>취득일(년, 월)</td>
-	<td>자격사항</td>
-	<td>발행기관</td>
-    </tr>   
+    <tr align = "center" bgcolor="lightgrey"> <!-- table의 위치를 center, 배경색을 lightgrey로 설정 -->
+	<td>취득일(년, 월)</td> <!-- table의 첫번째 컬럼명 -->
+	<td>자격사항</td> <!-- table의 두번째 컬럼명 -->
+	<td>발행기관</td> <!-- table의 세번째 컬럼명 -->
+    </tr>  
 
     <tr>
         <td>
@@ -141,8 +150,8 @@
 </section>
 
 
-<footer>
-   <br> 감사합니다.
+<footer> <!-- html의 가장 밑단을 footer 영역이라고 함 -->
+   <br> 감사합니다.  <!-- footer 영역에 인삿말 -->
 </footer>
 
 </body>
