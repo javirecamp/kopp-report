@@ -27,6 +27,7 @@ body {
     width: 460px;
 }
 
+/* 입력폼 */
 
 .img {
     position: absolute;
@@ -87,6 +88,17 @@ h3 {
     padding-right: 50px;
 }
 
+.table {
+    font-size: 15px;
+}
+
+.academic_name {
+    width:30px;
+    height:20px;
+    font-size:20px;
+}
+
+/* 버튼 생성 */
 .btn_area {
     margin: 30px 0 91px;
 }
@@ -102,12 +114,3 @@ h3 {
     font-weight: 400;
 }
 
-.table {
-    font-size: 15px;
-}
-
-.academic_name {
-    width:30px;
-    height:20px;
-    font-size:20px;
-  }
