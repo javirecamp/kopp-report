@@ -1,0 +1,48 @@
+/* 전체적인 요소에 글자를 중앙정렬 */
+body {
+    text-align: center;
+}
+/* wapper 요소에 margin 0 auto를 주어 빈 여백을 지정하지 않음
+보통 요소들 위치 초기화를 할때 자주 쓰이는 특성 */
+div#wapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+/* 각 섹션별로 여백처리 */
+nav, aside, section {
+    margin: 5px;
+    padding: 10px;
+}
+/* left 속성을 주어 왼쪽으로 정렬 */
+nav, section, aside {
+    float: left;
+}
+/* nav 영역은 231, 226, 226 색처리  */
+nav {
+    background-color: rgb(231, 226, 226);
+    width: 20%;
+    height: 600px;
+    text-align: center;
+}
+/* nav 영역 내 이미지 크기 설정 */
+nav img{
+    width: 300px;
+    height: 300px;
+}
+/* 전체가 100%이기떄문에 width를 41% 주어 aside 공간 활용  */
+section {
+    background-color: rgb(252, 252, 252);	
+    float: left;
+    width: 41%;
+    height: 70%;
+}
+/* 섹션별 제목에 칼라지정 */
+article h1{
+    background-color: #999;
+}
+/* aside 영역 색 지정 및 width 설정 */
+aside {
+    background-color: rgb(218, 218, 217);
+    width: 30%;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" media="screen">
+    <title>이력서</title>
+</head>
+<body>
+	<div id="wapper">
+		<!--네비게이션-->
+		<nav>
+            <!-- cdn 방식으로 이미지를 로드시킴 -->
+            <img src="https://cdn.pixabay.com/photo/2019/04/16/11/43/pubg-4131541_1280.jpg"/>
+            <!-- h태그는 주로 제목에 많이쓰이고 h1이 제일 큰 글자, 이후 h2,h3... -->
+            <h3>O O O</h3>
+            <h3>이력서</h3>
+            <br/>
+
+            <h2>대한민국, 울산</h2>
+            <h3>식물은 재배함으로써 자라고<br/>인간은 교육함으로써 사람이 된다.<br/>Rousseau.</h3>
+		</nav>
+		<!--콘텐츠부분, 내용삽입, article 별로 내용 구분-->
+		<section>
+			<article>
+				<h1>나를 소개 합니다</h1>
+                <h2>저는 최신 웹 기술에 대해 관심이 많습니다</h2>
+			</article>
+
+            <br/><br/>
+
+            <article>
+				<h1>경험사항</h1>
+                <h2>프론트엔드</h2>
+                <h2>백엔드</h2>
+                <h2>데이터베이스</h2>
+			</article>
+
+            <br/><br/>
+
+            <article>
+				<h1>스킬</h1>
+                <h2>Java</h2>
+                <h2>c#</h2>
+                <h2>HTML</h2>
+			</article>
+
+		</section>
+
+        <aside>
+			<p>신상정보 기입</p>
+            <!-- form 태그에 담아 get 방식으로 넘김
+            required 조건에 들어간 태그들은 필수사항들을 지켜줘야 합니다.
+            연락처에 placeholder를 써서 미리 text를 기입
+            -->
+            <form action="" method="get">  
+                <label for="name">이름(한글)</label>
+                <input id="name" name="name" type="text">
+                <br><br>
+                
+                <label for="bir">생년월일</label>
+                <input id="bir" name="bir" type="text">
+                <br><br>
+
+                <label for="sex">성별</label>
+                <input id="sex" name="sex" type="">
+                <br><br>
+
+                <label for="school">학교명</label>
+                <input id="school" name="school" type="text" required/>
+                <br><br>
+                
+                <label for="major">전공학과</label>  
+                <input id="major" name="major" type="text" required/>
+                <br><br>
+    
+                <label for="email">이메일주소</label>  
+                <input id="email" name="email" type="email" />
+                <br><br>
+                
+                <label for="phone">연락처</label>  
+                <input id="phone" name="phone" type="text" required placeholder="010-0000-0000" /><br>
+                <br><br>
+                <!-- submit 시 get 방식이라서 url 뒤에 내용이 담기게 된다. -->
+                <button type="submit">제출</button>
+            </form>
+		</aside>
+	</div>
+</body>
+</html>
