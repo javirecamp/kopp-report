@@ -1,26 +1,41 @@
-#기타
- {
-    margin : 0;
-    padding: 0;
-}
 
-
-#이력서{
-    color: #757575; 
-}
-
-
-
-div {
-    width :600px;
-    height:900px;
+/*홈페이지 배경,폰트,너비,여백 설정  */
+body {
+    background: #EEE;
+    font-family: arial, helvetica, sans-serif;
+    width: 500px;
     margin: 0 auto;
+    padding: 10;
+  }
+  
+
+/*header의 배경색, 글자색, 여백*/
+body > header {
+    margin: 300;
+    background: #333;
+    color: #EEE;
+  }
+
+/*etc 클래스  너비,높이,여백 등 설정 */
+.etc {
+    width :300px;
+    height:500px;
+    margin: 10 auto;
     border: 2px solid #000;
     font-size: 100px;
     text-align: center;
+    background-color: grey;
     line-height:300px;
 } 
 
+/* https://o365kopo로 시작하는 html 링크 색깔 변경 */
+a[href^="https://o365kopo-my.s"]{
+    color: blue;
+
+}
+
+
+/* 마우스 올릴 때 색깔 변화 */
 button:hover{
     color: #9c27b0;
     background: #e8eaf6;
