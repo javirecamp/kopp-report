@@ -1,0 +1,26 @@
+body {
+    /* 색 조합은 https://colorhunt.co/palette/5f71616d8b74efead8d0c9c0 사이트를 이용했습니다 */
+    background: #EFEAD8;
+    font-family: arial, helvetica, sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  body > header {
+    margin: 0;
+    color: #5F7161;
+    /* 아래 선 넣기 */
+    border-bottom: 3px solid #5F7161;
+  }
+
+  article > header {
+    margin: 0;
+    color: #827397;
+    /* 테두리 넣기 */
+    border: 3px solid #827397;
+  }
+
+  #profile2{
+    border: 1;
+  }
