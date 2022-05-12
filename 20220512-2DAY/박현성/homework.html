@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>이력서</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        <table> : 표를 만드는 태그
+            <th> : 표의 제목
+            <tr> : 표의 가로줄
+            <td> : 표의 세로줄
+        
+        속성 
+        colspan : 셀(가로줄)을 합치는 갯수를 결정
+        rowspan : 셀(세로줄)을 합치는 갯수를 결정
+        border  : 테이블 경계선 굵기를 지정
+        width   : 너비를 지정
+        height  : 높이를 지정
+
+        <input> : 입력 형식을 구현하는 태그
+        [type] 
+        search : 검색상자
+        date : 사용자 지역 연/월/일 삽입
+        email : 이메일 입력
+        text : 텍스트 입력
+
+        <img> : 이미지 태그
+        src : 이미지 경로를 입력한다. 
+
+        <label> : label을 결정하는 태그
+        
+        <textarea> : 긴글을 입력할 때 쓰는 태그
+         
+        <button> : 클릭할 수 있는 버튼을 정의
+        [type]
+        submit : 기본값이며, 데이터를 전송하는 버튼
+        reset : 초기값으로 재설정하는 버튼
+        button : 누름 버튼을 만듦
+        -->
+    <div>
+        <form action="" method="get">
+            <table>
+                <th colspan="3" >이력서</th>
+                <tr>
+                    <td rowspan="6">
+                        <img src="image.png" width="200px" height="200px">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">이름</label>
+                    </td>
+                    <td>
+                        <input id="name" name="name" type="search" autofocus required placeholder="홍길동"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">생년월일</label>
+                    </td>
+                    <td>
+                        <input type="date" value="1997-08-21"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">연락처</label>
+                    </td>
+                    <td>
+                        <input id="phone" name="phone" type="tel" required placeholder="01012345678"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">이메일</label>
+                    </td>
+                    <td colspan="2">
+                        <input id="email" name="email" type="email" required placeholder="abc123@kopo.com"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">주소</label>
+                    </td>
+                    <td colspan="2">
+                        <input id="address" name="address" type="search" required  placeholder="인천광역시 OO구 OO동"> <br>
+                    </td>
+                </tr>
+                <tr class="tr_size">
+                    <td>
+                        <label for="">학력</label>
+                    </td>
+                    <td colspan="2">
+                        <textarea name="" id=""  placeholder="학력을 적어주세요"></textarea>
+                    </td>
+                </tr>
+                <tr class="tr_size">
+                    <td>
+                        <label for="">수상</label>
+                    </td>
+                    <td colspan="2">
+                        <textarea name="" id=""  placeholder="수상이력을 적어주세요"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tb_bt" colspan="3">
+                        <button type="submit">이력서 등록</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
