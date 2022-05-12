@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- html에 sytle.css파일을 이용해 스타일을 적용 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- javascript -->
+    <script>
+        alert("2260341004 김윤호 이력서 입니다!!");
+    </script>
+</head>
+<body>
+    <header>
+        <!-- 이미지 첨부태그 -->
+        <img id="cat" src="https://cdn.pixabay.com/photo/2018/01/03/19/17/cat-3059075_960_720.jpg">
+        
+        <!-- form 태그 정보 전달 가능 -->
+        <form id="myinfo" action="" method="get">
+            <h3>개인정보</h3>
+            <!-- label과 input이 연결되면 시각적, 프로그래미적 장점이 있음 왜 그러한지는 모름 -->
+            <label for="phone">연락처</label>
+            <!-- placeholder 예시를 보여줌 required 반드시 입력해야만 제출이 가능 -->
+            <input type="tel" name="phone" id="phone" placeholder="000-0000-0000" required><br><br>
+
+            <!-- date 년,월,일 날짜를 선택할 수 있음 -->
+            <label for="birthday">생년월일</label>
+            <input type="date" name="date" id="date"><br><br>
+
+            <!-- 이메일 형식만 제출이 가능함 -->
+            <label for="email">이메일</label>
+            <!-- autofucus로 페이지화면이 나오자마자 이 부분에 커서가 뜸 -->
+            <input type="email" name="email" id="email" placeholder="test@xxx.com" autofocus><br><br>
+
+            <button type="submit">제출하기</button>
+        </form>
+           <br><br><br>
+
+        <div id="certify">
+            <h3>자격증</h3>
+            <!-- 순서가 있는 LIST -->
+            <ol>
+                <li>정보처리기사</li>
+                <li>정보보안기사</li>
+            </ol>
+            <h3>공인영어점수</h3>
+            <!-- Unordered List 순서가 없는 리스트 -->
+            <ul>
+                <li>TOEIC 700</li>
+                <li>TOEIC SPEAKING LEVEL 6</li>
+            </ul>
+        </div>
+        
+    </header>
+    
+    <section>
+            <!-- h1~h6태그를 묶을 때 사용 hgroup -->
+        <hgroup>
+            <h1>성실한 고양이</h1>
+            <h2> 입니다!</h2>
+        </hgroup> 
+        <br><br><br>
+
+        <div id="school">
+            <h3>접종사항</h3>
+            <!-- orderedList 순서가 있음 and list -->
+            <ol>
+                <li>xx병원 예방접종 완료 &nbsp;<a href="#">접종 확인 링크</a></li>
+                <li>xx병원 중성화 수술 완료 &nbsp;<a href="#">수술 확인 링크</a></li>
+            </ol>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+#cat {
+    /* 높이는 width에 맞춰서 자동으로 맞춤, float는 왼쪽으로 두어 오른쪽에 텍스트가 나올 수 있게 함 */
+    height: auto;
+    width: 300px;
+}
+
+
+header {
+    width:40%;
+    float: left;
+    /* 너비와 높이를 계산하는 방법 지정 */
+    box-sizing: border-box;
+    border-right: 2px solid;
+    /* 왼쪽에 여백 20px */
+    padding-left: 20px;
+}
+
+section {
+    /* 너비는 50% */
+    width:50%;
+    float: right;
+    /* 너비와 높이를 계산하는 방법 지정 */
+    box-sizing: border-box;
+}
+
+#myinfo {
+    width: 70%;
+    /* border 점선, 색 cyan */
+    border:dotted cyan ;
+    padding: 10px;
+}
+
+#school {
+    width : 70%;
+    border: solid mediumseagreen;
+    padding: 15px;
+}
