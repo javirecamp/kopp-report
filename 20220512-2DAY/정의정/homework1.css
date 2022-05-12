@@ -1,7 +1,11 @@
 body > header {
-    margin: 0;
+    <!-- margin: 0; -->
     background: #333;
     color: #EEE;
+    <!-- body영역의 header의 css
+    background: #333;   배경색을 rgb #333 색상으로 지정 (어두운 회색)
+    color: #EEE;  글씨색을 rgb #EEE 색상으로 지정 (흰색)
+    -->
   }
 
   /* img{
@@ -13,6 +17,11 @@ body > header {
     background-color: lightgrey;
     padding: 30px; /* 배경속성 */
     width: 700px;
+    <!-- form 태그의 css
+    background-color: lightgrey;   form 영역의 배경색상을 lightgrey로 설정
+    padding: 30px; 배경의 좌,우,위,아래 여백을 30pixel로 지정
+    width: 700px; 가로폭을 700pixel로 지정
+    -->
     
 }
 
@@ -20,4 +29,9 @@ footer {
     padding-top: 50px;
     margin:0 auto; 
     text-align:center;
+    <!-- 맨 하단 footer의 css
+    padding-top: 50px; footer의 출력문구의 위치를 위에서부터 50pixel 떨어진 곳에 위치시킴
+    margin:0 auto;   margin: __;에서 __값은 좌,우,위,아래 여백을 의미. 그 값이 0이므로 여백을 주지 않는다는 의미
+    text-align:center; text의 위치를 center에 위치시킴
+     -->
 }
