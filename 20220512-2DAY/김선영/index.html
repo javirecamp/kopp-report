@@ -1,110 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="RESUME" href="style.css">
 
 
 </head>
+
 <body>
-<H1>
-<h1 id="이력서"> <U>RESUME</U> </h1>  <br>
-</H1>
+    <header>
+        <section>
+            <h1 id="이력서"> <U>RESUME</U> </h1> <br>
 
-1.인력사항 <p>
+    </header>
+    1.인력사항 <p>
 
- <table border="1">
-    <tr>
-        <td rowspan="4"><pre>   사진  </pre></td>
-        <td> <label for="성명"> 성명:</label> 
-            <input id="성명" name="성명" type="text" placeholder="홍길동"></td>
-        <td> <label for="나이"> 나이:</label>
-            <input type="number" autofocus required> </td>
+    <form action="" method="get">
+        <!-- 테이블 생성 -->
+        <table border="1">
+            <!--첫번째 가로 줄 입력  -->
+            <tr>
+                <td rowspan="4">
+                    <pre>   사진  </pre>
+                </td>
+                <!-- 이름 정보 입력 -->
+                <td> <label for="성명"> 성명:</label>
+                    <input id="성명" name="성명" type="text" placeholder="홍길동" autofocus required>
+                </td>
+                <!-- 나이 정보 입력 -->
+                <td> <label for="나이"> 나이:</label>
+                    <input type="number" required>
+                </td>
 
-    </tr>
+            </tr>
 
-    <tr>
-        <td> 
-            <label for="대학"> 대학:</label> 
-            <input id="대학" name="대학" type="text" placeholder="010-1234-5678">
-        <td> 
-            <label for="email"> email:</label>
-            <input id="email" name="email" type="email" placeholder="22600000@kopo.ac.kr"><br>    
-        </td>
-    </tr>
-
-    <tr>
-        <td> 
-            <label for="주소"> 주소:</label> 
-            <input id="주소" name="주소" type="text" placeholder="서울시 은평구">  
-        
-        </td>
-        <td> 
-            <label for="취미/특기"> 취미:</label> 
-            <input id="취미/특기" name="취미" type="text" autofocus required>
-        </td>
-    </tr>
-
-
-</table> <p/>
-
-2.경력사항
-<table border="1">
-    <tr>
-        
-        <td rowspan="3.5"><pre>  경력사항  </pre></td>
-         </td>
-
-    </tr>
-
-    <tr>
-        <td> 
-            <label for="기간"> 기간:</label> 
-            <input id="기간" name="기간" type="number" placeholder="예시)3년 7개월">
-        <td> 
-            <label for="회사명"> 회사명:</label>
-            <input id="회사명" name="회사명" type="회사명" autofocus required><br>    
-        </td>
-    </tr>
-
-    <tr>
-        <td> 
-            <label for="부서"> 부서:</label> 
-            <input id="부서" name="부서" type="text" placeholder="예시)마케팅">  
-        
-        </td>
-        <td> 
-            <label for="직전 회사 연봉">연봉:</label> 
-            <input id="연봉" name="연봉" type="number" autofocus required>
-        </td>
-    </tr>
+            <!--두번째 가로 줄 입력  -->
+            <tr>
+                <!-- 대학 정보 입력 -->
+                <td>
+                    <label for="대학"> 대학:</label>
+                    <input id="대학" name="대학" type="text" autofocus required>
+                </td>
+                <!-- 이메일 정보 입력 -->
+                <td>
+                    <label for="email"> email:</label>
+                    <input id="email" name="email" type="email" placeholder="kopo@naver.com" required><br>
+                </td>
+            </tr>
 
 
-</table> <p/>
+            <!--세번째 가로 줄 입력 -->
+            <tr>
+                <td>
+                    <label for="주소"> 주소:</label>
+                    <input id="주소" name="주소" type="text" placeholder="서울시 은평구" required>
 
-<button type="submit"> 전송하기 </button>
-
-<p>
-<br>
-
-3.
- 기타 <br>
-<p>
-     
-    <a href="https://o365kopo-my.sharepoint.com/:b:/g/personal/heejinlee_office_kopo_ac_kr/Ea_ueurw4h1GlbyNK0mPzwEBms9hIV-SYDNSv5q26pd4PA?e=hCdjHl">자기소개링크</a>
-    <button>바로가기</button>
-</p>
+                </td>
+                <td>
+                    <label for="취미/특기"> 취미:</label>
+                    <input id="취미/특기" name="취미" type="text" autofocus required>
+                </td>
+            </tr>
 
 
-<div>
-    <img src="https://cdn.pixabay.com/photo/2019/05/02/15/16/teamwork-4173707_960_720.png" 
-    width :400px;
-    height:500px
-    alter="기타"> 
-</div>
+        </table>
+        </p>
+        </section>
+
+        <section>
+            2.경력사항
+
+            <!-- 2번째 테이블 생성 -->
+            <table border="1">
+                <tr>
+
+                    <td rowspan="3.5">
+                        <pre>  경력사항  </pre>
+                    </td>
+
+                </tr>
+
+                <!--첫번째 가로 줄 입력  -->
+                <tr>
+                    <!--기간 입력(숫자만 입력)  -->
+                    <td>
+                        <label for="기간"> 기간:</label>
+                        <input id="기간" name="기간" type="number" placeholder="예시)24(개월수만 입력)" required>
+                    <td>
+                        <label for="회사명"> 회사:</label>
+                        <input id="회사명" name="회사명" type="회사명" autofocus required><br>
+                    </td>
+                </tr>
+
+                <!--두번째 가로 줄 입력  -->
+                <tr>
+                    <td>
+                        <label for="부서"> 부서:</label>
+                        <input id="부서" name="부서" type="text" placeholder="예시)마케팅 부서" required>
+
+                    </td>
+                    <td>
+                        <!--연봉 숫자만 입력)  -->
+                        <label for="직전 회사 연봉">연봉:</label>
+                        <input id="연봉" name="연봉" type="number" placeholder="예시) 숫자만 입력" required>
+                    </td>
+                </tr>
+
+
+            </table>
+
+            <button type="submit"> 전송하기 </button>
+            <p></p>
+
+        </section>
+
+        <section>
+            3.
+            포트퐅리오 <p>
+                <!-- 포트폴리오 링크 삽입 -->
+                <a
+                    href="https://o365kopo-my.sharepoint.com/:b:/g/personal/heejinlee_office_kopo_ac_kr/Ea_ueurw4h1GlbyNK0mPzwEBms9hIV-SYDNSv5q26pd4PA?e=hCdjHl">자기소개링크</a>
+                <button>바로가기</button>
+            </p>
+
+            <!-- 이미지 삽입 -->
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2019/05/02/15/16/teamwork-4173707_960_720.png" width :200px;
+                    height:300px>
+            </div>
+        </section>
+
+        <aside>
+            <div class="etc">
+                <h3>기타</h1>
+                    <ul>
+                        <li>수상경력</li>
+                        <li>해외경험</li>
+                    </ul>
+                </h3>
+            </div>
+        </aside>
 
 </body>
+
 </html>
