@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action=".\index.html" method="get">
+        <!-- 현재 페이지 제목 작성 -->
+        <div id="header">
+            <h1>이 력 서</h1>
+        </div>
+    
+        <!-- wrapper -->
+        <div id="wrapper">
+
+            <!-- content -->
+            <div id="content">
+
+                
+                <!-- 
+                    image 삽입 
+                    이미지 선택할 수 있는 파일 선택 버튼 생성
+                -->
+                <div>     
+                        <img src="pic.png" align="bottom"> 
+                        <p>
+                            <h3>이력서 사진 선택</h3>
+                            <input type="file">
+                        </p>
+                        
+                    
+                </div>
+
+                <!-- name -->
+                <!-- 이름 작성할 수 있는 box 생성, 제일 첫번째 입력상자이기 때문에 자동으로 포커스 줌 -->
+                <div>
+                    <h3>
+                        <label for="name">이름</label>
+                    </h3>
+                    <span class="box int_name">
+                        <input type="text" name="name" class="int" placeholder="홍길동" autofocus>
+                    </span>
+                </div>
+
+                <!-- gender -->
+                <!-- radio 박스를 만들어 남녀 성별 선택할 수 있게 만들어줌 -->
+                <div>
+                    <h3>
+                        <label for="gender">성별</label>
+                    </h3>
+                    <span class="box gender_code">
+        
+                            <input type="radio" name="gender" value="man">남
+                            <input type="radio" name="gender" value="woman">여
+                        
+                    </span>
+                </div>
+
+                <!-- birth -->
+                <!-- 생년월일을 선택할 수 있는 날짜 선택란 생성 -->
+                <div>
+                    <h3>
+                        <label for="birth">생년월일</label>
+                    </h3>
+                    <span class="box int_birth">
+                        <input type="date" class="int">
+                    </span>
+                    
+                </div>
+
+                <!-- phone number -->
+                <!-- 연락처 작성 box 생성, 작성 예시 placeholder로 명시 -->
+                <div>
+                    <h3>
+                        <label for="phone">연락처</label>
+                    </h3>
+                    <span class="box int_phone">
+                        <input type="phone" name="phone" class="int" placeholder="010-0000-0000">
+                    </span>
+                </div>
+
+                <!-- 
+                    본인 email 작성
+                    email 예시 placeholder로 명시
+                 -->
+                <div>
+                    <h3>
+                        <label for="email">이메일</label>
+                    </h3>
+                    <span class="box int_email">
+                        <input type="email" name="email" class="int" placeholder="aaa@mail.com">
+                    </span>
+                </div>
+
+                <!-- 학력관련 내용 표로 작성    
+                    input type="date"를 사용하여 교육 기간 생성 및 학교명, 학과 칸 생성
+                    select option을 사용하여 학력 상태을 목록에서 선택할 수 있는 칸 생성
+                -->
+                <div>
+                    <h3>
+                        <label for="academic">학력사항</label>
+                    </h3>
+                    
+                    <table>
+                        <tr>
+                        <!-- 학력사항 테이블 header -->
+                            <th>기간</th>
+                            <th>학교명</th>
+                            <th>학과</th>
+                            <th>졸업<br>여부</th>
+                            </tr>
+                        
+                            <tr>
+                            <td>
+                                <input id="academic_period_start" name="academic_period_start" type="date">
+                                ~
+                                <input id="academic_period_end" name="academic_period_end" type="date">
+                            </td>
+                            <td><input id="academic_name" name="academic_name" type="text" placeholder="OO대학교"></td>
+                            <td><input id="academic_major" name="academic_major" type="text" placeholder="XX학과"></td>
+                            <td>
+                                <select name="academic_state" id="academic_state">
+                                    <option value="졸업">졸업</option>
+                                    <option value="재학">재학</option>
+                                    <option value="휴학">휴학</option>
+                                    <option value="자퇴">자퇴</option>
+                                    <option value="제적">제적</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                            
+                </div>
+
+                <!-- 경력관련 내용 작성 표로 만들어서 사용자가 작성할 수 있도록 함
+                    input type="date"를 사용하여 경력 기간 작성 및 근무지, 업무내용 작성할 수 있는 칸 생성-->
+                <div>
+                    <h3>
+                        <label for="career">경력사항</label> 
+                    </h3>
+                    <table>
+                        <tr>
+                            <!-- 경력사항 테이블 header -->
+                            <th>기간</th>
+                            <th>근무지</th>
+                            <th>업무내용</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="carrer_period_start" name="carrer_period_start" type="date"><br>
+                                ~<br>
+                                <input id="carrer_period_end" name="carrer_period_end" type="date">
+                            </td>
+                            <td><input id="carrer_name" name="carrer_name" type="text" placeholder="하나금융티아이"></td>
+                            <td><input id="carrer_content" name="carrer_content" type="text" placeholder="웹프로그래밍 개발"></td>
+                    </table>
+                </div>
+
+                <!-- send button -->
+                <div class="btn_area">
+                    <button type="button" id="btnSend">
+                        <span>제출하기</span>
+                    </button>
+                </div>
+
+                
+
+            </div>
+
+               
+        </div>
+
+    </form>
+</body>
+</html>
