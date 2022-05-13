@@ -1,0 +1,127 @@
+<!-- 0512 : homework -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서_윤땡땡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>이력서</h2>
+
+    <section>
+        <!-- 이력서 작성 시 조심해야할 내용을 읽어보아야 합니다. -->
+        <h3> 이력서 작성 시 유의사항</h3>
+        <p>
+            한 번 실패와 영원한 실패를 혼동하지 마라.<br>
+            -F.스콧 핏제랄드<br><br>
+            
+            시간의 걸음에는 세가지가 있다. <br>
+            미래는 주저하며 다가오고<br>
+            현재는 화살처럼 날아가고<br>
+            과거는 영원히 정지하고 있다.<br>
+            -F.실러<br>
+        </p>
+    </section> <br>
+
+    <section>
+        <p>
+            <!-- 
+                이력서 작성자의 인적사항을 입력합니다.
+                
+                입력할 사항들 
+                : 이름(한글), 이름(영문), 생년월일, 성별, 이메일주소, 연락처
+                
+                참고 사항
+                1. 이메일주소는 @ 가 들어간 이메일주소 형식으로 기재할 것
+                2. 연락처는 필수적으로 기재할 것 (010-0000-0000 형식 지키기)
+            -->
+            <h3>1.인적사항</h3>
+            <form action="" method="get">  
+                <label for="nameKor">이름(한글)</label>
+                <input id="nameKor" name="nameKor" type="text"><br>
+                
+                <label for="nameEng">이름(영문)</label>
+                <input id="nameEng" name="nameEng" type="text"><br>
+                
+                <label for="birth">생년월일</label>
+                <input id="birth" name="birth" type="text"><br>
+                
+                <label for="sex">성별</label>
+                <input id="sex" name="sex" type=""><br>
+    
+                <label for="email">이메일주소</label>  
+                <input id="email" name="email" type="email" /><br>
+                
+                <label for="phone">연락처</label>  
+                <input id="phone" name="phone" type="text" required placeholder="010-0000-0000" /><br>
+            </form>
+        </p>
+
+        <p>
+            <!-- 이력서 작성자의 얼굴이 제대로 나온 사진을 삽입합니다. -->
+            <div class="image">
+              <img src="https://cdn.pixabay.com/photo/2017/08/15/15/44/frog-2644410_960_720.png"
+                    width="100" height="100">
+              <figcaption>Self Portrait</figcaption>
+            </div>
+        </p>
+    </section><br>
+
+    <section>
+        <p>
+            <!-- 
+                이력서 작성자의 학력 사항들(학교 재학 기간, 학교명, 전공)을 기입 
+                이 때, 학교명과 전공학과는 필수 기재해야만 넘어갈 수 있습니다.
+            -->
+            <h3>2.학력사항</h3>
+            <form action="" method="get">  
+                <!-- 학교 재학 기간 (년,월 ~ 년,월) -->
+                <label for="date">기간(년,월)</label>
+                <input type="date"> ~ <input type="date"><br>
+                
+                <!-- 학교명 기입 -->
+                <label for="schoolName">학교명</label>
+                <input id="schoolName" name="schoolName" type="text" required/>
+                
+                <!-- 다니고 있는, 다녔던 학교에서의 전공 학과명 기입 -->
+                <label for="major">전공학과</label>  
+                <input id="major" name="major" type="text" required/><br>
+            </form>
+        </p> <br>
+
+        <p>
+            <!-- 이력서 작성자의 대외활동 사항들을 기입합니다. -->
+            <h3>3.대외활동</h3>
+            <form action="" method="get">  
+                <!-- 1.어떤 자격증(이름)을 언제(날짜) 취득했는지 입력 -->
+                <li>
+                    <b>자격증</b>
+                </li>
+                <label for="licenseDate">취득일자(년,월)</label>
+                <input id="licenseDate" name="licenseDate" type="date">
+                
+                <label for="licenseName">자격증 이름</label>  
+                <input id="licenseName" name="licenseName" type="text"/><br><br>
+
+                <!-- 2.어떤 외국어 시험을 쳤는지, 언제(날짜) 점수를 취득했는지 -->
+                <li> 
+                    <b>외국어 공인시험</b>
+                </li>
+                <label for="testDate">취득일자(년,월)</label>
+                <input id="testDate" name="testDate" type="date">
+                
+                <label for="testName">시험 이름</label>  
+                <input id="testName" name="testName" type="text"/><br>
+            </form>
+        </p>
+
+    </section>
+
+    <!-- 모든 내용들을 제대로 작성한 후, 제출하기 버튼을 클릭하여 마무리합니다. -->
+    <button type="submit"> 제출하기 </button>
+</body>
+</html>
