@@ -1,0 +1,153 @@
+<!-- 
+과제
+오늘의 과제는 HTML5를 활용해서 이력서 화면작성
+이름,사진, 생년월일, 성별, 주소, 전화번호, 학력, 수상, ... 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style.css에서 html의 화면에 대한 구성 및 내용을 변경한다. -->
+    <link rel="stylesheet" href="style.css">
+    <title>과제</title>
+</head>
+<body>
+    <!-- 이력서 PAGE class를 생성한다 -->
+    <div class = "PAGE">
+        <!-- 필요에 맞는 글자 크기로 이름을 작성한다.(h1부터 h5까지 있으며 숫자가 커질수록 글자가 작아진다.) -->
+    <h1>이력서</h1> 
+    <h2>인적사항</h2>
+    <ul>
+        <!-- img를 통하여 필요한 사진을 넣는다.(이 때 필요한 사진에 대한 경로가 중요! 작업의 편리성을 위해 같은 폴더에 사진 저장) -->
+        <img src="소닉.png" alt="사진">
+    </ul>   
+    <!-- 기본이 되는 인적사항(이름, 성별, 생년월일, 휴대폰번호, 주소)들을 기입한다. -->
+    <p>
+        <!-- label 태그로 이름을 먼저 만들어 준 후에 input을 이용하여 삽입할 수 있도록 상자를 만들어준다. -->
+        <!-- placeholder를 통해 삽입해야하는 방식을 알려준다. -->
+         <label for="name">이름:</label>
+         <input id="name" name="name" type = "text" placeholder="홍길동">
+         <label for="sex">성별:</label>
+         <input id = "sex" name="sex" type="text" placeholder="남">
+         <label for="Birth">생년월일:</label>
+         <input type="Date">
+     </p>
+     <p>
+         <label for="phone">전화번호:</label>
+         <input id="phone" name="birth" type = "text" placeholder="010-0000-0000">
+         <label for="email">이메일:</label>
+         <!-- email의 경우 type을 text가 아닌 이메일로 기입하게 한다. -->
+         <input id="email" name="email" type = "email" placeholder="gildonghong@google.com">
+     </p>
+        <label for="address">주소:</label>
+        <input id="address" name="address" type = "text" placeholder="서울시 동작구"><br>
+
+    
+    <h2>학력사항</h2>
+    <p>
+        <label for="high_school">고등학교:</label>
+        <input id ="high_school" name="high_school" type = "text" placeholder="서울고등학교">
+
+        <label for="high_grad">졸업여부:</label>
+        <input id ="high_grad" name="high_grad" type = "text" placeholder="졸업"><br>
+
+        <label for="high_admission">입학년도:</label>
+        <!-- 입학년도를 알아보기위해 type을 date로 설정한다. -->
+        <input id ="high_admission" name="high_admission" type = "date">
+
+        <label for="high_graduation">졸업년도:</label>
+        <input id ="high_graduation" name="high_graduation" type = "date">    
+    </p>
+
+    <p>
+        <label for="university">대학교:</label>
+        <input id ="university" name="university" type = "text" placeholder="한국대학교">
+
+        <label for="univ_grad">졸업여부:</label>
+        <input id ="univ_grad" name="univ_grad" type = "text" placeholder="졸업"><br>
+
+        <label for="major">전공:</label>
+        <input id ="major" name = "major" type="text" placeholder = "경제학">
+
+        <label for="score">학점:</label>
+        <input id = "score" name = "score" type="text" placeholder = "4.5만점 기준"><br>
+
+
+        <label for="high_grad">입학년도:</label>
+        <input id ="high_grad" name="high_grad" type = "date">
+
+        <label for="high_grad">졸업년도:</label>
+        <input id ="high_grad" name="high_grad" type = "date">
+    </p>
+    
+    <h2>자격증 및 어학성적</h2>
+    <!-- 여러개의 성적이 있을 수 있으므로 여러 칸을 생성한다. -->
+    <p>
+        <label for="test">자격증명:</label>
+        <input id ="test" name = "test" type="text" placeholder="SQLD">
+        
+        <label for="test_score">합격여부:</label>
+        <input id ="test_score" name = "test_score" type="text" placeholder="합격">
+        
+        <label for="exp_date">취득일자:</label>
+        <input id ="exp_date" name = "exp_date" type="date"><br>
+
+        <label for="test">자격증명:</label>
+        <input id ="test" name = "test" type="text" placeholder="SQLD">
+        
+        <label for="test_score">합격여부:</label>
+        <input id ="test_score" name = "test_score" type="text" placeholder="합격">
+        
+        <label for="exp_date">취득일자:</label>
+        <input id ="exp_date" name = "exp_date" type="date"><br>
+
+        
+        <label for="test">시험이름:</label>
+        <input id ="test" name = "test" type="text" placeholder="TOEIC">
+        
+        <label for="test_score">점수:</label>
+        <input id ="test_score" name = "test_score" type="text" placeholder="990">
+        
+        <label for="exp_date">만료기한:</label>
+        <input id ="exp_date" name = "exp_date" type="date"><br>
+
+        
+        <label for="test">시험이름:</label>
+        <input id ="test" name = "test" type="text" placeholder="TOEIC">
+        
+        <label for="test_score">점수:</label>
+        <input id ="test_score" name = "test_score" type="text" placeholder="990">
+        
+        <label for="exp_date">만료기한:</label>
+        <input id ="exp_date" name = "exp_date" type="date"><br>
+    </p>
+
+    <h2>경력사항</h2>
+    <p>
+        <label for="company">회사명:</label>
+        <input id ="company" name = "company" type="text" placeholder="하나금융티아이">
+
+        <label for="working_date">기간:</label>
+        <input id ="working_date" name = "working_date" type="date"> ~ <input id ="working_date" name = "working_date" type="date"><br>
+
+        <label for="company">회사명:</label>
+        <input id ="company" name = "company" type="text" placeholder="하나금융티아이">
+
+        <label for="working_date">기간:</label>
+        <input id ="working_date" name = "working_date" type="date"> ~ <input id ="working_date" name = "working_date" type="date"><br>
+
+        <label for="company">회사명:</label>
+        <input id ="company" name = "company" type="text" placeholder="하나금융티아이">
+
+        <label for="working_date">기간:</label>
+        <input id ="working_date" name = "working_date" type="date"> ~ <input id ="working_date" name = "working_date" type="date"><br>
+    
+    </p>
+
+    <button type = "submit">제출하기</button>
+    </div>
+</body>
+</html>
