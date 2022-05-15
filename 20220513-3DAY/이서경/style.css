@@ -1,0 +1,104 @@
+/* body 전체에 적용 */
+body{
+    margin: 0;
+    /* 구글 폰트 사용  */
+    font-family: 'Do Hyeon', 'Jua', sans-serif;
+}
+
+/* 맨 위에만 테두리 적용 */
+header{
+    border-top: solid;
+    border-radius: 10px;
+    border-color: #008485;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 헤더 메뉴 */
+.navbar{
+display: flex;
+/* 메뉴 항목 사이에 간격 넣기 */
+justify-content: space-between;
+align-items: center;
+padding: 8px 12px;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 25px;
+}
+
+.navbar_menu li{
+    padding: 8px 30px;
+}
+
+/* 아래 테두리에만 색깔이 들어오도록 설정 */
+.navbar_menu li:hover{
+    border-bottom: solid;
+    border-radius: 10px;
+    border-color: #008485;
+}
+
+.navbar_login{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.navbar_login li{
+    padding: 2px 12px;
+}
+
+.navbar_login li:hover{
+    background-color: #80c2c2;
+    border-radius: 2px;
+}
+
+.navbar_togleBtn{
+        position: absolute;
+        right: 20px;
+        font-size: 24px;
+        color:#008485;
+        display: none;
+    
+    }
+
+
+/* 반응형 웹사이트 설정 */
+@media screen and (max-width: 770px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+   
+    .navbar_login{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar_togleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active .navbar_login.active{
+        display: flex;
+    }
+}

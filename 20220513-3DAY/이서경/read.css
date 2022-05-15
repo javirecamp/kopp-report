@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    /* 구글 폰트 사용  */
+    font-family: 'Do Hyeon', 'Jua', sans-serif;
+}
+
+header {
+    background-color: #80c2c2;
+    padding: 8px 12px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
