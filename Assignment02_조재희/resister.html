@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resister</title>
+
+    <link rel="stylesheet" href="resister.css">
+    <script src="https://kit.fontawesome.com/40af199107.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="foresister">
+    <a href="login.html"><i class="fa-brands fa-pagelines"></i></a>
+    <a href="login.html">J'S Homepage</a>
+
+    </div>
+        <!-- 저번에 만든 이력서 양식을 응용해서 만들었습니다. -->
+    <div class="arrange">
+        <h1>Resister</h1>
+        <label for="name"><h3>이름</h3></label>
+        <input id="name" name="name" type="text" style="width:200px;height:25px;font-size:15px" autofocus required placeholder="홍길동"><br>
+
+        <label for="identity"><h3>생년월일</h3></label>
+        <input type="date" style="width:200px;height:25px;font-size:15px"><br>
+
+        <label for="phone"><h3>휴대폰 번호</h3></label>
+        <input id="phone" name="phone" type="text"  style="width:200px;height:25px;font-size:15px" autofocus required placeholder="01000000000"><br>
+
+        
+        <label for="id"><h3>아이디</h3></label>
+        <input id="id" name="id" type="text"  style="width:150px;height:25px;font-size:15px" autofocus required><br>
+
+        
+        <label for="password"><h3>비밀번호</h3></label>
+        <input id="password" name="password" type="text" style="width:100px;height:25px;font-size:15px" autofocus required><br>
+        
+        <!-- 이메일 타입 체크 -->
+
+        <label for="email"><h3>이메일 주소</h3></label>
+        <input id="email" name="email" type="email" style="width:400px;height:25px;font-size:15px" placeholder="abc@gmail.com"><br>
+        
+        
+        <label for="adress","exactadress"><h3>주소</h3></label>
+        <input id="adress" name="adress" type="text" style="width:300px;height:25px;font-size:15px" autofocus required placeholder="경기 광명시"><br>
+        <input id="exactadress" name="exactadress" style="width:400px;height:25px;font-size:15px" type="text" autofocus required placeholder="시청로 0번길 0-0"><br>
+
+
+
+        <h4>개인정보보호 동의</h4>
+        <Input type="checkbox"  name="check" id="check" value="check"/>
+        
+        <!-- 제출 버튼입니다 -->
+        <button type="button" onclick="location.href='index.html'">회원가입</button>
+
+    </div>
+
+
+
+</body>
+</html>
