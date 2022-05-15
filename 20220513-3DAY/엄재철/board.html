@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/board.css" media="screen">
+    <title>게시판</title>
+</head>
+<body>
+    <!-- nav에 넣어서 레이아웃을 구성해보았습니다. -->
+    <nav class="borderbar">
+        <h1>게시판</h1>
+        <!-- 클래스 이름을 w70 이렇게 준 이유는 각 요소별로 크기를 직관적으로 표기하기 위함입니다. -->
+        <ul class="board">
+            <li class="fl tc w70 title t_line">번호</li>
+            <li class="fl tc w500 title t_line">제목</li>
+            <li class="fl tc w120 title t_line">글쓴이</li>
+            <li class="fl tc w100 title t_line">작성일</li>
+            <li class="fl tc w100 title t_line ">조회수</li>
+        </ul>
+        <!--- 리스트의 내용을 임의적으로 넣어 보았습니다.--->
+        <ul class="board">
+            <li class="fl tc w70 list t_line lt_line">2</li>
+            <li class="fl tc w500 list t_line lt_line">제목</li>
+            <li class="fl tc w120 list t_line lt_line">관리자</li>
+            <li class="fl tc w100 list t_line lt_line">2019-02-11</li>
+            <li class="fl tc w100 list lt_line">1</li>
+        </ul>
+        <ul class="board">
+            <li class="fl tc w70 list t_line lt_line">1</li>
+            <li class="fl tc w500 list t_line lt_line">제목</li>
+            <li class="fl tc w120 list t_line lt_line">관리자</li>
+            <li class="fl tc w100 list t_line lt_line">2019-02-11</li>
+            <li class="fl tc w100 list lt_line">1</li>
+        </ul>
+        <!-- 삭제와 수정 버튼을 구성하기 위해 div 태그로 감싸고 
+        div 태그의 속성을 inline으로 변경하여 정렬처리 -->
+        <ul class="board">
+            <div class="btnWarp">
+                <div class="SignDel">
+                    <input type="submit" class="btn" value="삭제"></input>
+                </div>
+                <div class="SignMod">
+                    <input type="submit" class="btn" value="수정"></input>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</body>
+</html>
