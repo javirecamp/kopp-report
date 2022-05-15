@@ -1,0 +1,217 @@
+/*
+  이미지를 넣는다면 여백이 있도록 설정
+*/
+
+/* img{
+  vertical-align: middle;
+} */
+
+.navibar{
+  /* 플랙스 박스로 만들어 준다 */
+  display: flex;
+  /* 옆으로 정렬해주기, 수평정렬(메뉴바 전체를 가운데로 정렬) */
+  justify-content: space-between;
+
+  /* 수직정렬&중앙(메뉴 한개한개) */
+  align-items: center;
+
+  /* 색상을 입혀보자 */
+  background-color: pink;
+
+  /* 모서리에 공백추가 padding */
+  padding: 8px 12px;
+}
+
+/* a태그에 속성 지우기 */
+a{
+  text-decoration:none;
+  color: rgb(0, 0, 0);
+}
+
+/* 메인로고 */
+.navbar_logo{
+  font-size: 24px;
+}
+
+/* 메인로고이미지 색상 설정 */
+.navbar_logo{
+  color: rgb(250, 0, 167);
+}
+
+/* navbar_menu를 flex 박스로 변경 */
+.navbar_menu{
+  display: flex;
+  /* 리스트 점 없애기 */
+  list-style: none;
+  /* 메뉴를 가운데 정렬하기 위해 padding 적용 */
+  padding-left: 0;
+}
+
+/* 메뉴 아이템들 스페이스 넣어줘서 정렬 */
+.navbar_menu li{
+  padding: 8px 12px;
+}
+
+/* 링크 아이콘 스타일 지정*/
+.navbar_icons{
+
+  list-style: none;
+  /* 가로정렬 */
+  display: flex;
+  padding-left: 0;
+}
+/* 아이콘끼리의 간격 조절 */
+.navbar_icons li{
+  padding: 8px 12px;
+  color: white;
+}
+
+/* 메뉴에 마우스 올리면 배경색 변경 */
+.navbar_menu li:hover{
+  background-color: #f7ac77;
+  border-radius: 4px;
+}
+
+/* 지정된 위치에 정돈 되도록 적용 */
+/* 흐름과 무관하게 적용 */
+.navbar_togleBtn{
+  /* 원서 문서의 흐름을 벗어나는 방법 */
+  position: absolute;
+  /* 오른쪽의 적당한 위치에 있도록 함 */
+  right: 43px;
+  font-size: 24px;
+  color: #d49466;
+
+  /* 햄버거 안보이도록 설정 */
+  display: none;
+}
+
+/* 반응형 웹사이트로 만들기 위해 화면이 작아졌을때 적용할 스타일을 입힌다*/
+/* 770이하면 바뀜 */
+@media screen and (max-width:770px) {
+  /* 맨 바깥쪽 .navibar를 row에서 column으로 전환 */
+  .navibar{
+      flex-direction: column;
+
+      /* 공간을 여유주기 */
+      padding: 8px 24px;
+  }
+  /* 메뉴 목록 아래로 정렬 */
+  .navbar_menu{
+      display: none;
+      flex-direction: column;
+
+      /* center맞추기 */
+      align-items: center;
+
+      /* width적용 */
+      width: 100%;
+  }
+
+  /* 너비 만큼 하이라이트가 생기도록 해준다 */
+  .navbar_menu li{
+      width: 100%;
+      /* 자동으로 텍스트가 왼쪽으로 붙음, 이걸 해결 */
+      text-align: center;
+  }
+
+  /* .navbar_icons 확실하게 중간으로 가도록 설정*/
+  .navbar_icons{
+      display: none;
+      /* 현재 축에서 중간으로 이동 */
+      justify-content: center;
+
+      /* 폭을 전체로 설정하기, 이렇게 해야 완벽하게 중간 */
+      width: 100%;
+  }
+
+  /* 사이즈가 작아지면 햄버거 빵이 보이도록  */
+  .navbar_togleBtn{
+      display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_icons.active{
+      display: flex;
+  }
+}
+
+/* 리스트 컬러지정 */
+li{
+  color: palevioletred;
+}
+
+/* 버튼 색 바꾸기 */
+button:hover{
+  color: pink;
+  background: gray;
+}
+
+.leftspace{
+  padding: 8px 200px;
+}
+/* 선 설정 */
+ .line {
+  display: block;
+  height: 1px;
+  border-top: 5px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* div의 클래스 설정 */
+.div {
+  /* 회색 콘텐츠 내에서의 간격 */
+  padding-top: 90px;
+  /* 전체윈도우 창에서의 간격 */
+  margin-top: 80px;
+  /* 영역의 크기설정 */
+  width: auto;
+  height: 400px;
+  text-align: center;
+  
+}
+
+/* 리스트 속성 설정 */
+ul{
+  /* 표시가 안보이도록 설정 */
+  list-style: none;
+}
+
+/* 회원정보 입력란에 공백 추가 */
+.mb{
+  margin-bottom: 20px;
+}
+
+/* 글 작성 제목 입력란 형태 지정 */
+.title_form {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* 글 작성 내용 입력란 형태 지정 */
+.content_form {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 5px;
+}
+
+/* 글을 작성 페이지 전체 형태 설정 */
+#board_write{
+  padding-top: 80px;
+  padding-left: 20%;
+  padding-right: 20%
+}
+
+/* 등록, 취소, 초기화 버튼 위치 지정 */
+.bt_se{
+  margin-top: 10px;
+}
+
+/* 글 목록을 보여주는 형태 지정 */
+.settable{
+  width: 80%;
+  margin: auto;
+  /* 가운데로 위치 */
+  text-align: center;
+}

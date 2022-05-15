@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- document의 첫시작 -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 윈도우창에 보이는 이름입력 -->
+        <title>글 목록</title>
+        <!-- css 불러오기 -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/bfc1868d62.js" crossorigin="anonymous"></script>
+        <script src="js/main.js" defer></script>
+        
+    </head>
+    <!-- document의 바디, 화면 출력 내용 -->
+    <body>
+        <!-- 하나의 문단을 만들때 쓰는 태그 -->
+        <nav class="navibar">
+            <div class="navbar_logo">
+            <i class="fa-solid fa-clipboard-list"></i>    
+            <a href="list.html">글 목록</a>
+            </div>
+
+        <ul class="navbar_menu">
+            <li><a href="index.html">홈</a></li>
+            <li><a href="signup.html">회원가입</a></li>
+            <li><a href="write.html">글작성</a></li>
+            <li> <a href="list.html">글 목록보기</a></li>
+            <li><a href="login.html">로그인</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><i class="fa-brands fa-facebook-square"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+        </ul>
+        <a href="#" class="navbar_togleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        </nav>
+
+        <p>
+            <h4 class="leftspace">글 목록</h4>
+            <hr class="line">
+        </p>
+
+        <div class="div">
+            <!-- 목록을 보여주는 형태 지정 class -->
+            <table class="settable">
+                <tr>
+                    <!-- 테이블 속성 설정 -->
+                    <!-- 테이블 각각의 속성 이름 설정 -->
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>날짜</th>
+                    <th>조회수</th>
+                </tr>
+                <tr>
+                    <!-- 테이블 내용1 -->
+                    <td>1</td>
+                    <td>게시글1</td>
+                    <td>신모씨</td>
+                    <td>20220514</td>
+                    <td>100000</td>
+                    <td><button> 수정 </button></td>
+                    <td><button> 삭제 </button></td>
+                </tr>
+                <tr>
+                    <!-- 테이블 내용2 -->
+                    <td>2</td>
+                    <td>게시글2</td>
+                    <td>정모씨</td>
+                    <td>20220514</td>
+                    <td>100000</td>
+                    <td><button type="submit"> 수정 </button></td>
+                    <td><button type="submit"> 삭제 </button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
