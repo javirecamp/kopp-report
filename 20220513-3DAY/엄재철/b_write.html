@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/board.css" media="screen">
+</head>
+
+<body>
+    <form method="get" action="board.html">
+        <!-- 글쓰기 페이지는 table로 구성해보았습니다.
+        내용과 border 사이 여백을 cellpadding의 값을 주었습니다. -->
+        <table class="maintable" cellpadding=2>
+            <tr>
+                <td>
+                    <h1>글쓰기</h1>
+                </td>
+            </tr>
+            <tr>
+                <!-- 태그에 직접 css를 적용하였습니다. 인라인 스타일로 배경을 하얀색으로 지정 -->
+                <td style="background-color:white;">
+                    
+                    <!-- width로 할수도 있지만
+                         테이블 td의 속성으로 cols, rows의 크기를 직접 지정할수 있습니다.
+                    -->
+                    <table class="table2">
+                        <tr>
+                            <td class="content">작성자</td>
+                            <td><input type=text size=20 style="border:0;" required> </td>
+                        </tr>
+                        <tr>
+                            <td class="content">제목</td>
+                            <td><input type=text size=60 style="border:0;" required></td>
+                        </tr>
+                        <tr>
+                            <td class="content">내용</td>
+                            <td><textarea cols=85 rows=15></textarea></td>
+                        </tr>
+                    </table>
+
+                    <div class="SignWrap">
+                        <input type="submit" class="btn" value="글쓰기"></input>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
