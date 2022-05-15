@@ -1,0 +1,134 @@
+/* 해당 미디어 쿼리를 적용해 안쪽 여백설정  */
+@media screen and (max-width: 900px) {    
+    .borderbar{
+        padding : 70px 53px;
+    }
+}
+
+.borderbar { text-align: center }
+.board{height: 5px;}
+ul { display: inline-block; }
+
+/* 공통옵션 */
+ul li {list-style:none; }
+.fl {float:left; }
+.tc {text-align:center; }
+
+/* 게시판 목록과 관련된 width 설정 */
+.board {width: 950px; }
+.w70 {width:70px; }
+.w500 {width:500px; }
+.w120 {width:120px; }
+.w100 {width:100px; }
+.title {
+	height: 50px;
+	line-height: 50px;
+	background:rgb(216, 193, 137);
+	font-weight: bold;
+}
+.t_line {
+    border-right:solid 1px gray;
+}
+.lt_line {border-bottom:solid 1px gray;
+    border-right: 1px solid gray;}
+.list {
+	height: 40px;
+	line-height: 40px;
+	background: #f3f3f3;
+}
+
+
+/* 게시글쓰기, tr, td에 폰트 설정과 border 설정 */
+table.table2{
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    margin : 20px 10px;
+}
+table.table2 tr {
+     width: 50px;
+     padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+table.table2 td {
+     width: 100px;
+     vertical-align: top;
+     border-bottom: 1px solid #ccc;
+}
+/* 테이블을 감싸고 있는 전체 */
+.maintable{
+    padding-top:50px;
+    width: 700px;
+    border: 0;
+    border-collapse: collapse;
+}
+/* 테이블 중앙정렬 시 margin 사용 */
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+table, td, th {
+    border-collapse : collapse;
+}
+.SignWrap{
+    text-align: center;
+}
+/* 삭제, 수정 버튼을 가지고 있는 div */
+.btnWarp{
+    float: right;
+    margin-right: 52px;
+}
+.SignDel{
+    display: inline-block;
+}
+.SignMod{
+    display: inline-block;
+}
+
+/* 버튼 꾸미기 css */
+.btn {
+    background-color: #af904c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body { background: #fff; } 
+.maintable td {
+  color: rgb(216, 193, 137);
+}
+/* 게시글 쓰기에서 사용된 textarea 꾸미기 속성 */
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px #dcd7c7;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: both;
+}
+/* 표의 작성자, 제목, 내용에 있는 td */
+.content {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    background: rgb(249, 245, 245);
+    text-align: center;
+  }

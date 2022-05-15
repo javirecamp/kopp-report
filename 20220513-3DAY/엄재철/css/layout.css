@@ -1,0 +1,75 @@
+/* 공통적인 부분 */
+body{
+    font-family: "Apple SD Gothic Neo",'돋움',Dotum,sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+.join{
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+/* 기본적으로 block 요소인데 inline으로 변경처리, 원래 input이 가지고 있는 태그
+css 속성을 제거하고 다른것을 입히는 과정 */
+.input {
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 80%;
+    color: #999999;
+    border: none;
+    background: transparent;
+}
+/* 버튼 css */
+.btn {
+    background-color: #af4c4c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.SignWrap{
+    text-align: center;
+}
+/* 텍스트를 span으로 묶어 스타일을 입힘 */
+.input_area span{
+    float: left;
+    padding: 8px;
+}
+.container{
+    min-height: 100%;
+}
+/* 아이디, 패스워드를 담고 있는 틀 css */
+.member_join, .member_login {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.member_wrap {
+    width: 556px;
+    margin: 0 auto;
+}
+
+/* ul과 관련된 기본 css를 제거 후 새로운 속성으로 입힘 */
+ul {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.member_join>ul>li, .member_login>ul>li {
+    padding: 0 20px 0 12px;
+    border-top: 1px solid #ededed;
+}
+/* 아이디, 비밀번호 div 안쪽 여백을 설정 */
+.member_join .input_area, .member_login .input_area {
+    padding: 12px 0px;
+}
+
+
