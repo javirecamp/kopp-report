@@ -1,0 +1,183 @@
+.sangdan {
+    display: flex; /* 가로 방향 정렬 */
+    justify-content: space-between; /* 옆으로 정렬 */
+    align-items: center; 
+    /* 수직정렬 */
+
+    background-color: #4ec94c;
+    padding: 8px 12px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sangdan_logo {
+    color: rgb(237, 139, 69);
+    font-size: 24px;
+}
+
+.sangdan_menu {
+    display: flex; 
+    /* 이거 해주니까 일자정렬 됨 */
+
+    list-style: none;
+    /* 점박이 없애주기 */
+
+    padding-left: 0;
+}
+
+.sangdan_menu li {
+    padding: 8px 12px;
+    /* 메뉴 항목들끼리 띄워주기 */
+}
+
+
+.sangdan_menu li:hover {
+    background-color: rgb(224, 148, 42); 
+    border-radius: 4px;
+    /* 네모낳게 각잡혀있던 hover상태의 배경을 4px깎아서 둥그렇게 만들기 */
+
+    cursor: pointer;
+
+    border: 2px solid white;
+}
+
+
+/* 여기는 버튼 두개를 합친 배경 영역 */
+.sangdan_button { 
+    display: flex; /* 두개를 수직배열에서 수평배열로 만들어주기 */
+    list-style: none; /* 점박이 없애주기 */
+    /* padding: 8px 12px */
+   
+}
+
+.sangdan_button li {
+    padding: 2px 2px; /* 버튼 두개를 조금 떨어뜨려 주기 */
+}
+
+
+button {
+    background-color: rgb(224, 148, 42);
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+
+    /* display: none; */
+}
+
+
+/* 여기가 각각의 버튼 영역 */
+button:hover {
+    color: #7e77df;
+    background-color: rgb(231, 129, 26);
+    cursor: pointer;
+    /* font-size: 50px; */
+
+    border: 2px solid white; 
+    /* hover상태일 때 배경선을 흰색으로 */
+}
+
+
+
+.sangdan_togle {
+    position: absolute; 
+    /* 이것만 해주면 토글이 사라짐
+    포지션을 절대 경로로 설정한다는 의미 */
+
+    right: 45px;
+
+    /* 위에 두개 해주면 회원가입 토글이랑 겹침 ㅜㅜ */
+
+    font-size: 24px;
+    color: rgb(231, 129, 26);
+
+    display: none; 
+    /* 맨 처음 기본 화면에선 토글이 보이지 않게 해줌 */
+}
+
+
+/* 반응형 웹사이트 만들어주기 
+미디어 쿼리를 사용해 크기가 일정정도 작아졌을 때 다르게 적용할 스타일을 입힘*/
+@media screen and (max-width: 770px) {
+    /* 여기서는 770px보다 작아졌을 때 적용할 스타일들을 설정해줄 것임 */
+
+    .sangdan {
+        flex-direction: column;
+        /* 크기가 작아졌을 때 sangdan을 row에서 col로 바꿔줌 */
+
+        padding: 8px 24px; /* 여백 늘려주기 */
+    }
+
+
+    .sangdan_menu {
+        
+        display: none;
+        /* 맨처음엔 메뉴들이 안보이게 설정 */
+
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+    }
+
+    .sangdan_menu li{
+        width: 100%; 
+        /* 자신이 쓰는 영역의 100프로를 다 쓰게 해줌
+        근데 여기까지만 해주면 메뉴들이 갑자기 왼쪽으로 가니까 */
+
+        text-align: center;
+        /* center로 다시 맞춰줌 */
+    }
+ 
+    
+    .sangdan_togle {
+        display: block;
+        /* 위에서 display: none으로 맨처음 화면에 안보이게 해준 것을
+        창이 작아졌을 땐 뜨게 해줌 */
+
+
+        right: 45px; 
+        /* 창이 작아지면 토글버튼이 우상단에 위치하도록 해줌
+        (위에서 절대경로로 설정해준 후) */
+    }
+
+    button {
+        /* display: none; */
+        
+
+        /* 아오 가운데 정렬 왜 안 됨 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+    
+        flex-direction: row;
+
+        align-items: center;
+
+        width: 100%;
+    
+    }
+
+
+
+    button li {
+        width: 100%; 
+        /* 자신이 쓰는 영역의 100프로를 다 쓰게 해줌
+        근데 여기까지만 해주면 메뉴들이 갑자기 왼쪽으로 가니까 */
+
+        text-align: center;
+        /* center로 다시 맞춰줌 */
+
+    }
+
+    .sangdan_menu.active,
+    button.active {
+        display: flex;
+    }
+
+
+}

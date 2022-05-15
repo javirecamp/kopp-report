@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_write.css" media="screen">
+    <script src="https://kit.fontawesome.com/56583bf545.js" crossorigin="anonymous"></script>
+    <title> 글 쓰기 </title>
+</head>
+
+<body>
+    
+    <!-- 상단 바 고정으로 만들어주기 -->
+    <nav class="sangdan">
+        <div class="sangdan_logo">
+        <i class="fa-solid fa-comments"></i>
+        <a href="#"> JJ Community </a>
+        </div>
+    </nav>
+
+
+    <!-- 페이지 상단의 인삿말 -->
+    <header>
+        <h1> Write Your Story! </h1> 
+    </header>
+
+    <form action="" method="get">
+
+        <!-- 제목 칸 설정 -->
+        <br><label for="title"> 제목 </label> <br>
+        <input type="text" name="title" id="title" placeholder="제목을 입력하세요" required> <br>
+        <!-- input값이 1개 이상이므로 id를 부여하여 구분 -->
+        
+        <!-- 내용 칸 설정 -->
+        <br><br><label for="content"> 내용 </label> <br>
+        <input type="text" name="content" id="content" placeholder="내용을 입력하세요" required> <br>
+
+
+        <!-- submit 버튼 생성 -->
+        <br><button type="submit"> Commit! </button><br>
+    </form>
+
+
+</body>
+</html>

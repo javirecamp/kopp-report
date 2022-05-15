@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JJ Community </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/56583bf545.js" crossorigin="anonymous"></script>
+
+    <!-- javascript 넣어줄거임 -->
+    <script src="poly.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- 상단 바 고정으로 만들어주기 -->
+    <nav class="sangdan"> 
+        <div class="sangdan_logo">
+        <i class="fa-solid fa-comments"></i>
+        <a href="#"> JJ Community </a>
+    </div>
+
+
+    <!-- 상단바에 메뉴 생성해주기 -->
+    <ul class="sangdan_menu">
+        <li>
+            <a href=""> 홈 </a></li>
+        <li>
+            <a href=""> 내 홈피 </a></li>
+        <li>
+            <a href=""> 친구 홈피 </a></li>
+        <li>
+            <a href=""> 친구 찾기 </a></li>
+        <li>
+            <a href="write.html"> 글 쓰기 </a></li>
+        <li>
+            <a href="write_list.html"> 글 목록 </a></li>
+    
+    </ul>
+
+
+    <!-- 회원가입, 로그인 버튼 만들기 -->
+    <ul class="sangdan_button">
+        <li>
+            <!-- button에 링크걸기
+            현재창에서 링크 연결은 <<onclick="location.href='링크주소'>>
+            새 창에서 링크 연결은 onclick="window.open('링크주소') -->
+        <button type="button" onclick="location.href='joinus.html'"> 회원가입 </button></li>
+
+        <li>
+        <button type="button" onclick="location.href='login.html'"> 로그인 </button></li>
+    </ul>
+
+    
+     <!-- 메뉴 모양 햄버거빵 토글 클래스 생성 -->
+    <a href="#" class="sangdan_togle">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+
+    </nav>
+
+</body>
+</html>

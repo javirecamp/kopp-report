@@ -1,0 +1,49 @@
+body {
+    background-color: #536253;
+    margin: 0;
+}
+
+.sangdan {
+    background-color: #4ec94c;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.sangdan_logo {
+    color: rgb(237, 139, 69);
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    color: rgb(224, 148, 42);
+    font-size: 15px;
+    text-align: center;
+}
+
+#title {
+    width:600px;
+}
+
+button:hover {
+    color: #4ec94c;
+    background-color: rgb(231, 129, 26);
+    cursor: pointer;
+    /* font-size: 50px; */
+
+    border: 2px solid white; 
+    /* hover상태일 때 배경선을 흰색으로 */
+}
+
+
+button {
+    background-color: rgb(224, 148, 42);
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+}

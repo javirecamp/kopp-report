@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_writelist.css" media="screen">
+    <script src="https://kit.fontawesome.com/56583bf545.js" crossorigin="anonymous"></script>
+    <title> 글 목록 </title>
+</head>
+
+<body>
+    
+    <!-- 상단 바 고정으로 만들어주기 -->
+    <nav class="sangdan">
+        <div class="sangdan_logo">
+        <i class="fa-solid fa-comments"></i>
+        <a href="#"> JJ Community </a>
+        </div>
+    </nav>
+
+    <!-- 페이지 상단의 인삿말 -->
+    <header>
+        <h1> A List of Your Stories </h1>
+    </header>
+
+     
+    <table border="2" width ="700" height="50" align = "center" >
+    <!-- semantic한 이력서 작성을 위해 table 형식 사용 
+    border= 테두리 만드는 속성 테두리 / width= table의 가로폭 / height는 세로폭 / align은 table의 위치 -->
+       
+    <tr align = "center" bgcolor="orange"> <!-- table의 위치를 center, 배경색을 lightgrey로 설정 -->
+    <td> 제목 </td> <!-- table의 첫번째 컬럼명 -->
+    <td> 게시일 </td> <!-- table의 두번째 컬럼명 -->
+    </tr>   
+     
+    <tr>
+        <td>
+            <input type="text" id="title" name="text" placeholder="제목1" required></td>
+        <td>
+            <input type="date" name="date" placeholder="" required></td>
+    </tr>
+     
+    <tr>
+        <td>
+            <input type="text" id="title" name="text" placeholder="제목2" required></td>
+        <td>
+            <input type="date" name="date" placeholder="" required></td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="text" id="title" name="text" placeholder="제목3" required></td>
+        <td>
+            <input type="date" name="date" placeholder="" required></td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="text" id="title" name="text" placeholder="제목4" required></td>
+        <td>
+            <input type="date" name="date" placeholder="" required></td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="text" id="title" name="text" placeholder="제목5" required></td>
+        <td>
+            <input type="date" name="date" placeholder="" required></td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="text" id="title" name="text" placeholder="제목6" required></td>
+        <td>
+            <input type="date" name="date" placeholder="" required></td>
+    </tr>
+
+    </table>
+
+        
+    <div style=" text-align: center;">
+        <br><button style=" display: inline-block;"> 수정하기 </button>
+            <button style=" display: inline-block;"> 삭제하기 </button>
+    </div>
+    <!-- 수정, 삭제버튼 생성
+    버튼의 위치를 중앙에 설정해주기 위해 style 옵션을 줌 -->
+
+</body>
+</html>

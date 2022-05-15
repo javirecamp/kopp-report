@@ -1,0 +1,53 @@
+body {
+    background-color: #536253;
+    margin: 0;
+
+}
+
+
+.sangdan {
+   /* display: flex;  가로 방향 정렬 */
+
+    background-color: #4ec94c;
+    padding: 8px 12px;
+    text-align: center; /* 가운데로 위치시키기 */
+}
+
+.sangdan_logo {
+    color: rgb(237, 139, 69);
+    font-size: 24px;
+}
+
+header {
+    /* margin: 0; */
+    color: rgb(224, 148, 42);
+    font-size: 15px;
+
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+form {
+    width: 100%;  /* 자신이 쓰는 영역의 100프로를 다 쓰게 해줌 */
+    text-align: center; /* 가운데 정렬 */
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(224, 148, 42);
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 24px;
+}
+
+
+
