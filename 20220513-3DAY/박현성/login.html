@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="loginstyle.css">
+    <title>글쓰기</title>
+    <script src="https://kit.fontawesome.com/c4f5274430.js" crossorigin="anonymous"></script>
+    <script src="poly.js" defer></script>
+</head>
+<body>
+    <!-- 메뉴바 -->
+    <nav class="navibar">
+        <div class="navbar_logo">
+            <i class="fa-solid fa-piggy-bank"></i>
+            <a href="#">로그인</a>
+        </div>
+        <ul class="navbar_menu">
+            <li>
+                <a href="mainpage.html">홈</a></li>
+            <li>
+                <a href="">금융상품소개</a>
+            </li>
+
+            <!-- 현재 구현된 페이지 -->
+            <li>
+                <a href="list.html">게시판</a>
+            </li>
+            <li>
+                <a href="">FAQ</a>
+            </li>
+        </ul>
+        <ul class="navbar_icons">
+            <li>
+                <!-- 회원가입 페이지로 이동 -->
+            <a href="signup.html">
+                <i class="fa-solid fa-user-plus"></i>
+            </a>
+            </li>
+        </ul>
+        <a href="#" class="navbar_togleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+
+    
+<body>
+    <span class="tt">로그인</span>
+<div class="login">
+    <!-- 로그인시 홈으로 이동 -->
+    <form action="mainpage.html">
+        <div class="id">
+            <label>ID</label>
+            <!-- 이메일로 로그인 -->
+            <input type="email" placeholder="이메일을 입력하세요">
+        </div>
+
+        <div class="pw">
+            <label>PW</label>
+            <!-- 타입을 비밀번호로 하면 입력시 보이지 않는다. -->
+            <input type="password" placeholder="비밀번호를 입력하세요">
+        </div>
+        <div class="loginbtn">
+        <button type="submit">login</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

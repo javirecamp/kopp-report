@@ -1,0 +1,162 @@
+.navibar{
+    display: flex;
+   
+    justify-content: space-between;
+   
+    align-items: center;
+
+    background-color: #008485;
+
+    padding: 16px 22px;
+}
+
+
+body{
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_logo{
+    font-size: 24px;
+    color: white;
+}
+
+
+.navbar_logo{
+    color: #ffffff;
+}
+
+
+.navbar_menu{
+    display: flex;
+
+    list-style: none;
+    
+    padding-left: 0;
+}
+
+
+.navbar_menu li{
+    padding: 16px 22px;
+}
+
+
+.navbar_icons{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+
+.navbar_icons li{
+
+    padding: 16px 22px;
+}
+
+
+.navbar_menu li:hover{
+    background-color: #ff0000;
+    border-radius: 4px;
+}
+
+
+.navbar_togleBtn{
+   
+    position: absolute;
+    
+    right: 40px;
+    font-size: 24px;
+    color: white;
+
+    display: none;
+}
+
+
+@media screen and (max-width: 770px) {    
+ 
+    .navibar{
+        flex-direction: column;
+        padding: 16px 22px;
+    }
+
+    .navbar_menu{
+        /* 처음에 보여지지 않도록 해야 한다. */
+        display: none;
+
+        flex-direction: column;
+
+        
+        align-items: center;
+
+  
+        width: 100%;
+    }
+
+    
+    .navbar_menu li{
+        width: 100%;
+
+       
+        text-align: center;
+    }
+    
+  
+    .navbar_icons{
+        
+        justify-content: center;
+
+        width: 100%;
+
+        display: none;
+    }
+
+   
+    .navbar_togleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      /* 수직의 위치 상태를 적용하기 위해 height를
+       준다.
+     */
+     height: 100vh;   
+     font-size: 100px;
+    
+}
+
+.search_input{
+    border-radius: 20px;
+    outline: 2px solid #008485;
+    width: 500px;
+    height:100px;
+}
+
+.search_input::placeholder {
+   text-align: center;
+   color: rgb(92, 92, 92);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.search button{
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border: none;
+    background-color: white;
+}

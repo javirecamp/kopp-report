@@ -1,0 +1,71 @@
+/* 테이블 속성 */
+
+/* 
+
+    <table> : 표를 만드는 태그
+        <th> : 표의 제목
+        <tr> : 표의 가로줄
+        <td> : 표의 세로줄
+    
+    속성 
+    colspan : 셀(가로줄)을 합치는 갯수를 결정
+    rowspan : 셀(세로줄)을 합치는 갯수를 결정
+    border  : 테이블 경계선 굵기를 지정
+    width   : 너비를 지정
+    height  : 높이를 지정
+  
+*/
+.list th td{
+    border : 0;
+}
+
+.list a{
+    color:#383838;
+    text-decoration:none;
+}
+.list{
+    width:100%;
+    border-bottom:1px solid #999;
+    color:#666;
+    font-size:12px;
+    table-layout:fixed;
+}
+
+.list th{
+    padding:5px 0 6px;
+    border-top:solid 1px #999;
+    border-bottom:solid 1px #b2b2b2;
+    background-color:#f1f1f4;
+    color:#333;
+    font-weight:bold;
+    line-height:20px;
+    vertical-align:top;
+}
+.list td{
+    padding:8px 0 9px;
+    border-bottom:solid 1px #d2d2d2;
+    text-align:center;
+    line-height:18px;
+}
+
+.list .title{
+    text-align:left; 
+    padding-left:15px;
+    font-size:13px;
+}
+
+.udbtn{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding-right: 10px;
+
+}
+
+.udbtn button{
+    margin-left: 5px;
+    margin-top: 10px;
+    border: 2px solid #008485;
+    border-radius: 10px;
+    background-color: white;
+}

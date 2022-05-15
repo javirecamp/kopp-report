@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="liststyle.css">
+    <link rel="stylesheet" href="mainstyle.css">
+    <title>글목록</title>
+    <script src="https://kit.fontawesome.com/c4f5274430.js" crossorigin="anonymous"></script>
+    <script src="poly.js" defer></script>
+
+</head>
+
+ <!-- 
+        <table> : 표를 만드는 태그
+            <th> : 표의 제목
+            <tr> : 표의 가로줄
+            <td> : 표의 세로줄
+        
+        속성 
+        colspan : 셀(가로줄)을 합치는 갯수를 결정
+        rowspan : 셀(세로줄)을 합치는 갯수를 결정
+        border  : 테이블 경계선 굵기를 지정
+        width   : 너비를 지정
+        height  : 높이를 지정
+     
+        -->
+<body>
+    <nav class="navibar">
+        <div class="navbar_logo">
+            <i class="fa-solid fa-piggy-bank"></i>
+            <a href="#">게시판 목록</a>
+        </div>
+        <ul class="navbar_menu">
+            <li>
+                <!-- 홈페이지 첫화면으로 이동 -->
+                <a href="mainpage.html">홈</a></li>
+            <li>
+                <a href="">금융상품소개</a>
+            </li>
+
+            <!-- 현재 구현된 페이지 -->
+            <li>
+                <a href="list.html">게시판</a>
+            </li>
+            <li>
+                <a href="">FAQ</a>
+            </li>
+        </ul>
+        <ul class="navbar_icons">
+            <li>
+                <!-- 로그인 페이지로 이동 -->
+            <a href="write.html">
+                <i class="fa-solid fa-pen"></i>
+            </a>
+            </li>
+        </ul>
+        <a href="#" class="navbar_togleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+
+   
+<!-- 리스트 게시판 시작-->
+<table class="list">
+   
+    <colgroup>
+    <col>
+    <col width="110">
+    <col width="100">
+    <col width="80">
+    </colgroup>
+
+    <thead>
+    <tr>
+    <th scope="col">제목</th>
+    <th scope="col">글쓴이</th>
+    <th scope="col">날짜</th>
+    <th scope="col">조회수</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr>
+    <td class="title">
+    <a href="#">게시판 제목1</a>
+    </td>
+    <td class="name">글쓴이</td>
+    <td class="date">2020/05/01</td>
+    <td class="hit">17</td>
+    </tr>
+
+    <tr>
+        <td class="title">
+        <a href="#">게시판 제목2</a>
+        </td>
+        <td class="name">하호호</td>
+        <td class="date">2021/04/01</td>
+        <td class="hit">4</td>
+    </tr>
+
+    <tr>
+        <td class="title">
+        <a href="#">게시판 제목3</a>
+        </td>
+        <td class="name">최영영</td>
+        <td class="date">2022/01/01</td>
+        <td class="hit">1</td>
+    </tr>
+    
+    <tr>
+        <td class="title">
+        <a href="#">게시판 제목4</a>
+        </td>
+        <td class="name">이하하</td>
+        <td class="date">2022/02/01</td>
+        <td class="hit">24</td>
+    </tr>
+
+    <tr>
+        <td class="title">
+        <a href="#">게시판 제목5</a>
+        </td>
+        <td class="name">박동글</td>
+        <td class="date">2022/04/01</td>
+        <td class="hit">19</td>
+        </tr>
+    
+        <tr>
+            <td class="title">
+            <a href="#">게시판 제목6</a>
+            </td>
+            <td class="name">글쓴이</td>
+            <td class="date">2022/05/01</td>
+            <td class="hit">334</td>
+        </tr>
+    
+        <tr>
+            <td class="title">
+            <a href="#">게시판 제목7</a>
+            </td>
+            <td class="name">홍길동</td>
+            <td class="date">2022/05/01</td>
+            <td class="hit">134</td>
+        </tr>
+        
+        <tr>
+            <td class="title">
+            <a href="#">게시판 제목8</a>
+            </td>
+            <td class="name">김하나</td>
+            <td class="date">2022/05/21</td>
+            <td class="hit">4</td>
+        </tr>
+
+        <tr>
+            <td class="title">
+            <a href="#">게시판 제목9</a>
+            </td>
+            <td class="name">김코포</td>
+            <td class="date">2022/05/11</td>
+            <td class="hit">1</td>
+            </tr>
+        
+            <tr>
+                <td class="title">
+                <a href="#">게시판 제목10</a>
+                </td>
+                <td class="name">강폴리</td>
+                <td class="date">2022/05/21</td>
+                <td class="hit">0</td>
+            </tr>
+        
+            <tr>
+                <td class="title">
+                <a href="#">게시판 제목11</a>
+                </td>
+                <td class="name">아무개</td>
+                <td class="date">2022/05/10</td>
+                <td class="hit">2</td>
+            </tr>
+            
+            <tr>
+                <td class="title">
+                <a href="#">게시판 제목12</a>
+                </td>
+                <td class="name">글쓴이</td>
+                <td class="date">2022/05/01</td>
+                <td class="hit">9</td>
+            </tr>
+
+        
+
+   
+   
+    </tbody>
+    </table>
+    <div class="udbtn">
+        <button>수정</button>
+        <button>삭제</button>
+    </div>
+
+     
+     
+</body>
+</html>
