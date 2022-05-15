@@ -1,0 +1,121 @@
+.navbar{
+    /* flex 박스로 만들어준다 */
+    display: flex;
+
+    /* 옆으로 정렬 및 중간 스페이스*/
+    justify-content: space-between;
+
+    /* 수직으로 정렬.
+    현재 주어진 축과 반대방향으로 적용(수직)*/
+    align-items: center;
+
+    /* 색상 */
+    background-color: rgb(248, 200, 145);
+
+    /* 전체적으로 붙어있는 모서리에 pading 주기 */
+    padding: 8px 20px;
+    /*     위아래 양옆 */
+}
+
+ /* 원하지 않는 공백 삭제 */
+body{
+    margin: 0;
+}
+
+/* 태그에 텍스트 밑줄과 색상 지우기 */
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* 로고 사이즈 및 색상 조절 */
+.navbar_logo{
+    font-size: 25px;
+    display: grid;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+img{
+    display: grid;
+    align-items: center;
+}
+
+/* navbar_menu를 flex박스로 변경 */
+.navbar_menu{
+    display: flex;
+
+    /* list목록으로 되어있어서 앞에 붙은 목록 구분 표시 없애기  */
+    list-style: none;
+
+    /* 메뉴의 센터맞춰주기 - pading 적용 */
+    padding-left: 0;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 메뉴들 간 스페이스 주기 */
+.navbar_menu li{
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+
+/* 메뉴에 마우스를 올렸을 때 색깔 변경하기 */
+.navbar_menu li:hover{
+    background-color: #ea8e4c;
+    border-radius: 4px;
+}
+/* 원래 문서의 흐름이 아닌 지정된 위치에 두기 */
+.navbar_togleBtn{
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #ea8e4c;
+
+    /* 아이콘이 기본으로는 안보이도록 설정 */
+    display: none;
+
+}
+
+
+
+/*  반응형 웹사이트 */
+@media screen and (max-width: 850px) {
+    /* 바깥쪽에 있는 .navbar를 row에서 column으로 바꾸기 */
+    .navbar{
+        flex-direction: column;
+
+        /* 여유공간을 주기 위한 padding */
+        padding: 8x 24px;
+    }
+
+    /* 메뉴 목록도 아래로 정렬 */
+    .navbar_menu{
+        flex-direction: column;
+
+        /* 반대축 아이템을 사용해서 center 맞춰주기 */
+        align-items: center;
+
+        /* width 적용 */
+        width: 100%;
+        display: none;
+    }    
+    /* 메뉴에 마우스를 올렸을 때 전체 너비 만큼 하이라이트 주기 */
+    .navbar_menu li:hover{
+        width: 100%;
+        text-align: center;
+    }
+   
+    /* 없어졌던 토글버튼 다시 보이게 하기 */
+    .navbar_togleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+
+}

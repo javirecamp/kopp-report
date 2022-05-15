@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* 링크의 색 변경 및 밑줄 삭제 */
+a {
+    text-decoration: none;
+    color: black;
+    text-decoration-line : none;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+/* 글 목록 띄우기 */
+.board_title {
+    margin-bottom: 30px;
+}
+
+/* 폰트 굵게 */
+.board_title strong {
+    font-size: 30px;
+}
+
+.board_title p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* 가운데 정렬 */
+.bt_wrap {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+/* 글쓰기 버튼 설정해주기 */
+.bt_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+/* 글쓰기 글자 설정 */
+.bt_wrap a.on {
+    background: #000;
+    color: #fff;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+
+/* 각각의 글을 구분할 수 있는 밑줄 넣어주기 */
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+/* 항목 이름들과 글 리스트 구분해주는 밑줄 */
+.board_list > div.top {
+    border-bottom: 1px solid #999;
+}
+
+/* 맨 마지막 글의 밑줄은 조금 검정색으로 넣어주기 */
+.board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.board_list > div > div {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 글 항목 이름들 굵게 */
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+.board_list .num {
+    width: 10%;
+}
+
+.board_list .title {
+    width: 60%;
+    text-align: left;
+}
+
+.board_list .top .title {
+    text-align: center;
+}
+
+.board_list .writer {
+    width: 10%;
+}
+
+.board_list .date {
+    width: 10%;
+}
+
+.board_list .count {
+    width: 10%;
+}
+
+
+.board_page {
+    /* 글 목록과 페이지 목록 띄우기 */
+    margin-top: 30px;
+    /* 가운데 정렬 */
+    text-align: center;
+    font-size: 0;
+}
+
+.board_page a {
+    /* 줄바꿈 없이 정렬도 되고 중간 스페이스도 설정가능 */
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+    
+}
+
+.board_page a.bt {
+    /* << >> 설정 */
+    padding-top: 10px;
+    font-size: 12px;
+    letter-spacing: -1px;
+   
+}
+/* 글 리스트 글자 설정 */
+.board_page a.num {
+    padding-top: 9px;
+    font-size: 14px;
+   
+}
+
+/* 현재 목록인 1에 색깔 주기 */
+.board_page a.num.on {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+    text-decoration-line : none;
+}
+
+
+@media (max-width: 850px) {
+    .board_wrap {
+        width: 100%;
+        min-width: 320px;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .board_list .num,
+    .board_list .writer,
+    .board_list .count {
+        display: none;
+    }
+
+    .board_list .date {
+        width: 40%;
+    }
+
+    .board_list .title {
+        text-indent: 10px;
+    }
+
+    .board_list .top .title {
+        text-indent: 0;
+    }
+
+    .board_page a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .board_page a.bt {
+        padding-top: 7px;
+    }
+    
+    .board_page a.num {
+        padding-top: 6px;
+    }
+
+}
+
