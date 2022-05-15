@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input{
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+}
+
+.submit-btn{
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+        background: none;
+        border:  2px solid black;
+        color: black;
+        cursor: pointer;
+        position: relative;
+}
+
+.btn-swap span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    /* 왼쪽으로 위치 시킨다 */
+    left: 0;
+    /* 색상을 입힌다 */
+    background: #ed4848;
+    height: 100%;
+    width: 100%;
+    /* 불투명하게 만들기 위해 opacity를 준다 */
+    opacity: 0;
+    /* 애니메이션 효과 주기 */
+    transition: opacity 0.3s;
+}
+
+.btn-swap:hover span{
+    opacity: 1;
+}
+
+
+.find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.find li a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 5px;
+}
