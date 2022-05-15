@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 외부의 아이콘을 이용하기 위한 script코드 -->
+    <script src="https://kit.fontawesome.com/b45208349c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="write.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <nav class="navibar">
+        <div class="navbar_logo">
+            <i class="fa-brands fa-uncharted"></i>
+            <a href="main.html">My Homepage</a>
+        </div>
+
+        <a href="#" class="navbar_togleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <div id="writeform">
+        <form action="main.html" method="get">
+            <label for="title">title</label>
+            <input type="text" id="title" name="title" required><br><br>
+            
+            <label for="content">content</label>
+            <input type="text" id="content" name="content" required><br><br>
+    
+            <button type="submit">글작성</button>
+        </form>
+    </div>
+    
+</body>
+</html>
