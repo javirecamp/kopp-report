@@ -1,0 +1,112 @@
+body {
+    margin: 0 0;
+    width: 100%;
+}
+
+section {
+    padding: 20px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#upload-content, tr, td{
+    padding: 20px 20px;
+    width: 95%;
+    margin: 10px 10px;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+#new-write {
+    margin: 8px 12px;
+}
+
+/* for 값을 가지는 lable */
+label[for="title"], label[for="serial-cycle"] {
+    padding-right: 50px;
+    margin-right: 0;
+}
+label[for="genre"], label[for="penname"] {
+    padding-right: 97px;
+    margin-right: 0;
+}
+label[for="cover-img"] {
+    padding-right: 37px;
+    margin-right: 0;
+}
+
+
+#upload-content div {
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+section td .upload-content_header {
+    font-size: 20px;
+}
+
+#title {
+    font-size: 17px;
+}
+
+#upload-content input {
+    border: none;
+    outline: none;
+}
+
+#genre {
+    width: 200px;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.serial-cycle {
+    font-size: 17px;
+}
+
+.serial-cycle_day {
+    font-size: 14px;
+    margin: 4px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    border:3px solid #707070;
+    margin: 0;
+}
+
+
+#intro {
+    display: block;
+    width: 95%;
+    height: 300px;
+    border: none;
+    outline: 1px dotted gray;
+    resize: none;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#penname {
+    display: inline-block;
+}
+
+#save, #savepoint {
+    font-size: 17px;
+    width: 40%;
+    height: 50px;
+    background: white;
+    color: #008989;
+    border: 1px solid #008989;
+    margin-bottom: 50px;
+}
+
+#save:hover, #savepoint:hover {
+    background: #008989;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

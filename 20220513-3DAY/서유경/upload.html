@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업로드</title>
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/upload-style.css">
+    <script
+    src="https://kit.fontawesome.com/3b179c433e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="javascript/nav.js" defer></script>
+</head>
+<body>
+    <!-- index.html의 nav 원소를 가져옴 -->
+    <iframe id="load-nav" src="index.html" 
+        onload="this.before(this.contentDocument.body);">
+    </iframe>
+
+    <!-- 새글쓰기 작성 -->
+    <section>
+        <!-- table로 정렬 -->
+        <table id="upload-content">
+            <tr><td>
+                <h3 id="new-write">새 글쓰기</h3>
+            </td></tr>
+            <tr><td>
+                <!-- 제목 작성하는 칸 -->
+                <div>
+                    <label for="title" class="upload-content_header">작품제목</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                
+                <!-- 장르 선택하는 칸 -->
+                <div>
+                    <label for="genre" class="upload-content_header">장르</label>
+                    <select name="genre" id="genre">
+                        <option value="로맨스">로맨스</option>
+                        <option value="로판">로맨스 판타지</option>
+                        <option value="판타지">판타지</option>
+                        <option value="일상">일상</option>
+                        <option value="무협">무협</option>
+                        <option value="격투ㆍ배틀">격투ㆍ배틀</option>
+                        <option value="추리ㆍ미스터리">추리ㆍ미스터리</option>
+                        <option value="라이트노벨">라이트노벨</option>
+                        <option value="자유장르">자유장르</option>
+                    </select>
+                </div>
+                
+                <!-- 연재주기 선택하는 칸 -->
+                <div>
+                    <label for="serial-cycle" class="upload-content_header">연재주기</label>
+                    <label class="serial-cycle"><input type="radio" name="serial-cycle" value="자유연재">자유연재</label>
+                    <label class="serial-cycle"><input type="radio" name="serial-cycle" value="요일연재">요일연재
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="월">월</label>
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="화">화</label>
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="수">수</label>
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="목">목</label>
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="금">금</label>
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="토">토</label>
+                        <label class="serial-cycle_day"><input type="checkbox" name="serial-cycle_day" value="일">일</label>
+                    </label>
+                </div>
+                
+                <!-- 필명 작성하는 칸 -->
+                <div>
+                    <label for="penname" class="upload-content_header">필명</label>
+                    <input type="text" name="penname" id="penname">
+                </div>
+                
+                <!-- 표지이미지 업로드하는 칸 -->
+                <div>
+                    <label for="cover-img" class="upload-content_header">표지이미지</label>
+                    <input type="file" id="Cover-img" name="Cover-img" accept="image/*" onchange="loadFile(this)">
+                </div>
+
+                <!-- 작품 소개 작성하는 칸 -->
+                <div>
+                    <label for="intro" class="upload-content_header">작품소개</label><br>
+                    <textarea name="intro" id="intro"></textarea>
+                </div>
+            </td></tr>
+        </table>
+
+        <!-- 제출 버튼과 임시저장 버튼 -->
+        <button type="submit" id="save">저장</button>
+        <button type="submit" id="savepoint">임시저장</button>
+    </section>
+</body>
+</html>

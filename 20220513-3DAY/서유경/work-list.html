@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품목록</title>
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/work-list-style.css">
+    <script
+    src="https://kit.fontawesome.com/3b179c433e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="javascript/nav.js" defer></script>
+</head>
+<body>
+    <!-- index.html의 nav 원소를 가져옴 -->
+    <iframe id="load-nav" src="index.html" 
+        onload="this.before(this.contentDocument.body);">
+    </iframe>
+
+    <!-- 작성한 작품 리스트(글 목록)를 나열한 내용 -->
+    <section id="work-list-content">
+        <table>
+            <!-- 1행 병합 -->
+            <tr><th colspan="2"><input type="checkbox" name="works">작품 목록</th></tr>
+            <!-- tr 당 작품 하나 -->
+            <tr>
+                <!-- 작품 이름 및 링크 -->
+                <td><a href="#" class="work-link"><input type="checkbox" name="works">여름이었다</a></td>
+                <!-- 수정 삭제 버튼 -->
+                <td class="col2">
+                    <button type="submit">수정</button>
+                    <button type="submit">삭제</button>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#" class="work-link"><input type="checkbox" name="works">노는게 제일 좋아</a></td>
+                <td class="col2">
+                    <button type="submit">수정</button>
+                    <button type="submit">삭제</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
