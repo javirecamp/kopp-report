@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css" media="screen">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+    <!-- 전체적으로 container로 감싸준다. -->
+    <div class="container">
+        <!-- get 방식으로 전달하되 전달 페이지는 login.html 이다. -->
+        <form action="login.html" method="get">
+            <div class="member_wrap">
+                <h4 class="join">회원가입</h4>
+                <!-- 기본적으로 아이디, 패스워드를 담고 있는 틀 -->
+                <div class="member_join">
+                    <ul>
+                        <li>
+                            <div class="input_area">
+                                <span>아이디</span>
+                                <input type="text" class="input" required>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input_area">
+                                <span>패스워드</span>
+                                <input type="text" class="input" required>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input_area">
+                                <span>이름</span>
+                                <input type="text" class="input" required>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input_area">
+                                <span>휴대폰 번호</span>
+                                <input type="text" class="input" required>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input_area">
+                                <span>생년월일</span>
+                                <input type="text" class="input" required>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- submit으로 회원가입 페이지로 이동 -->
+                <div class="SignWrap">
+                    <input type="submit" class="btn" value="회원가입"></input>
+                </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
