@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">정선짱🌟</a>
+
+        <ul class="menu">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="join.html">회원가입</a></li>
+            <li><a href="list.html">글 목록</a></li>
+            <li><a href="write.html">글 작성</a></li>
+        </ul>
+    </nav>
+
+    <!-- 글 작성 화면을 꾸미는 클래스. 넓이와 높이를 지정함 -->
+    <div class="write">
+        <h3>글 작성</h3>
+        <!-- 화면 내의 개체들의 위치와 넓이를 지정하는 클래스 -->
+        <div class="panel">
+        <form action="" method="get">
+            <label for="title">제목</label><br>
+            <input id="title" name="title" type="text"><br>
+
+            <label for="content">내용</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+
+            <!-- button의 크기와 스타일을 지정하는 클래스 -->
+            <button id="writeBtn" type="submit">작성하기</button>
+        </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 정선짱🌟 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url("배경.jpg");
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.index {
+    background-image: url("index.jpg");
+    height: 100vh;
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav > a {
+    margin-left: 10px;
+}
+
+nav > a, li> a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+.menu li {
+    padding: 8px 30px;
+}
+
+img {
+    text-align: center;
+}
+
+.login {
+    margin: 110px auto 250px;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 370px;
+    background-color: #fff;
+    padding: 50px 75px 55px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.join {
+    margin: 110px auto 250px;
+    left: 0;
+    right: 0;
+    width: 510px;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px 75px 55px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+.list {
+    margin: 110px auto 250px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 500px;
+    background-color: #fff;
+    padding: 50px 75px 55px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.write {
+    margin: 110px auto 250px;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 500px;
+    background-color: #fff;
+    padding: 50px 75px 55px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.write h3 {
+    text-align: center;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel input, select {
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.panel textarea{
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+#loginBtn, #joinBtn, #writeBtn {
+    width: 100%;
+    background-color: skyblue;
+    border-color: transparent;
+    color: white;
+}
+
+#update {
+    width: 80px;
+    background-color: skyblue;
+    border-color: transparent;
+    color: white;
+}
+
+#delete {
+    width: 80px;
+    background-color: skyblue;
+    border-color: transparent;
+    color: white;
+}
+
+#buttonlist {
+    float: right;
+    display: inline;
+}
+
+
+#joinBtn {
+    margin-top: 20px;
+}
+
+#loginBtn a{ 
+    text-decoration: none;
+}
+
+#joinBtn a {
+    text-decoration: none;
+}
+
+.account {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+th {
+    color: #168;
+    background: #f0f6f9;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+} 
+  
+tr, td {
+text-align: center;
+border: 1px solid #ddd;
+padding: 10px;
+}
+
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+    .index {
+        background-image: url("오구.jpg");
+    }
+  }
+
