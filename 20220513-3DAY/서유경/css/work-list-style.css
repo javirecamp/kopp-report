@@ -1,0 +1,49 @@
+#work-list-content {
+    margin: 15px;
+    width: 100%;
+}
+
+table {
+    width: 95%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid gray;
+    padding: 10px;
+    font-size: 18px;
+}
+
+td {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.work-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.work-link:hover {
+    font-weight: bold;
+}
+
+table .col2{
+    text-align: right;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #008989;
+    color: #008989;
+}
+
+button:hover {
+    background-color: #008989;
+    color: white;
+}
