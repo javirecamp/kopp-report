@@ -1,0 +1,47 @@
+body{
+    background-color:lightgray;
+}
+.banner{
+    background-color:#263343;
+    display:flex;
+    padding:30px 50px;
+    align-items: center;
+    justify-content: space-between;
+    color:black;
+    font-size:24px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight:bold;
+    border-style:solid;
+
+}
+
+.banner i{
+    color:green;
+    font-size:40px;
+    
+}
+
+
+a{
+    text-decoration:None;
+    color:white;
+    
+}
+body{
+    margin:0px;
+}
+
+caption{
+    font-style:oblique;
+    font-size:50px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight:bold;
+}
+
+center a{
+    color:black;
+    font-size:25px;
+}
+center a:hover{
+    color:red;
+}

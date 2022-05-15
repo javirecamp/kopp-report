@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Oswald:wght@200&display=swap');
+    </style>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/40af199107.js" crossorigin="anonymous"></script>
+    <script src="poly.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+    </style>
+
+</head>
+<body>
+    <nav class="navibar">
+        <div class="navibar_logo">
+            <a href="#"><i class="fa-solid fa-tree-city"></i></a>&nbsp&nbsp
+            <a href="#"> 아늑한 농장</a>
+        </div>
+
+        <!-- padding 을 주게 되면은 
+그안에 큰 요소들간의 간격이 벌어지게 됨 
+div 안에 div들이 여러개 있으면 그 큰 div들간에 간격이 벌어짐 
+div안의 또 안의 div 안의 또 li들의 간격을 벌려야하는 것이기 때문에 navbar에만 padding을 줘서는 li들은 벌어지지 않는다!  -->
+
+
+
+        <ul class="navibar_menu">
+            <li>
+                <a href="write.html">글쓰기</a>
+            </li>
+            <li>
+                <a href="read.html">글 목록보기</a>
+            </li>
+            <li>
+                <a href="read.html">나무 경매</a>
+            </li>
+            <li>
+                <a href="read.html">나무 정보</a>
+            </li>
+
+            <li>
+                <a href="correction.html">회원정보 수정</a>
+            </li>
+            <li>
+                <a href="login.html">로그아웃</a>
+            </li>
+        </ul>
+
+ 
+        <a href="#" class="navibar_togleBtn">
+            <!-- # 넣으면 클릭해도 안넘어감  -->
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i>togle button</i> -->
+        </a>
+        <div class="company">
+        <i class="fa-solid fa-apple-whole"></i>
+        (주) 아느칸
+        </div>
+    </nav>
+    <!-- 저는 그림과 텍스트를 같이 flex하게 주고 싶은데 그러면 글씨들이 이상하게 나와서 한번더 
+    div로 묶어냈습니다. 
+    그렇게 하나의 열로 텍스트들(이 안에 text div 2개 존재)과 그림들을 분류했습니다. -->
+    <div class="goal">
+        <div class="goal2">
+            <div class="goal3">&nbsp아느칸 농장에 오신것을 환영합니다!</div><br>
+            <div class="goal4">
+            &nbsp수십년간 쌓아온 노하우로 수목에 관한 정보들을 전달하고 서로 공유할 수 있는 공간이 되기를 바랍니다. 
+            저희는 누구보다 정확하고 빠르게 수목을 진단하고 병충해에 관한 치료법들을 제시해줍니다.<br>
+            &nbsp또한 실내 환경에 적합한 수목과 분재들을 판매하고 있습니다.     
+            </div>
+        </div>
+
+    <figure>
+
+        <img src="bird2.jpeg" width=400 height=500>
+        <figcaption align="center">[아느칸농장]</figcaption>
+    
+    </figure>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.bar{
+    background-color:#263343;
+    font-size:30px;    
+    font-weight:bold;
+    text-align:center;
+    display:flex;
+    padding:30px 50px;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    border-color:black;
+    border-style:solid;
+    
+    
+}
+    
+body{
+    margin:0px;
+    background-color: lightgray;
+    font-family: 'Nanum Myeongjo', serif;
+    
+}
+.other{
+    color:white;
+}
+
+a{
+    text-decoration:None;
+    color:white;
+}
+.bt_se button{
+
+    border-radius:10px;
+    height:25px;
+    width:100px;
+}
+.bt_se button:hover{
+    background:#d49466;
+    color:black;
+}
+.bar a i{
+    color:green;
+    font-size:40px;
+}
+#write_area{
+    padding:30px 700px;
+    font-family: 'Nanum Brush Script', cursive;
+}
