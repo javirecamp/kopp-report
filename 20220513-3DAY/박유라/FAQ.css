@@ -1,0 +1,217 @@
+html{
+
+    height:100%;
+
+}
+
+body{
+
+    margin: 0px;
+
+    height:100%;
+
+}
+
+.main{
+
+    height:100%;
+
+    width: 100%;
+
+}
+
+.dname {
+    display: none;
+}
+
+ 
+.board{
+
+    width: 1200px;
+
+    height: 100%;
+
+    margin: auto;
+
+}
+
+.table caption{
+    font-size: 50px;
+    font-family: 'Do Hyeon', sans-serif;
+    padding-top: 62px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.table{
+
+    font-size :20px;
+
+    border-collapse: collapse;
+
+    width: 1200px;
+
+    margin-top:200px;
+
+    border: 1px solid gray;    
+
+    text-align: center;
+
+    
+
+}
+
+.thead td {
+
+    background: #B2B2B2;
+
+}
+
+ 
+
+td{
+
+    height: 40px;
+
+    border-bottom:1px solid black;
+
+}
+
+ 
+
+tr td:nth-child(2){
+
+    width: 600px;
+
+}
+
+ 
+
+/* 페이지 번호 */
+
+.page-nation li{ 
+
+    list-style: none;
+
+} 
+
+ 
+
+.page-wrap {
+
+    text-align:center;
+
+    font-size:0;
+
+ }
+
+.page-nation  {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top:20px;
+
+}
+
+ 
+
+.page-nation a {
+
+    display:block;
+
+    margin:0 3px;
+
+    float:left;
+
+    border:1px solid #e6e6e6;
+
+    width:28px;
+
+    height:28px;
+
+    line-height:28px;
+
+    text-align:center;
+
+    background-color:#fff;
+
+    font-size:13px;
+
+    color:black;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+.page-nation a:hover{
+
+    background-color:gray;
+
+    color:white;
+
+}
+
+
+.btn {
+    text-align: right;
+    
+   
+}
+
+.btn button {
+    border:  1px solid rgba(117, 114, 114, 0.454);
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    margin-right: 10px;
+
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    /* 패딩을 적용해준다 */
+    padding: 6px 2px;
+    /* 넒이를 지정해 준다 */
+   width: 80px;
+    /* 마우스를 올렸을 때 손가락 모양으로 변경 */
+    cursor: pointer;
+    /* 버튼안에 적용되기 위해서 여기에 작성 */
+   position: relative;
+}
+
+
+.btn button:hover {
+    color: white;
+    background-color: rgba(24, 20, 20, 0.813);
+
+}
+
+/* 반응형 */
+@media screen and (max-width: 770px) {
+    .board {
+       width: 100%;
+       min-width: 320px;
+       padding: 0 30px;
+       box-sizing:border-box;
+    }
+
+    tr td:nth-child(2){
+
+        width: 320px;
+    
+    }
+
+    .table caption{
+        width: 770px;
+        font-size: 50px;
+        font-family: 'Do Hyeon', sans-serif;
+        padding-top: 62px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,118 @@
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 11, 49, 0.922);
+    padding: 8px 15px;
+
+}
+
+body{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+}
+
+.navbar_logo{
+    font-size: 35px;
+    color: rgb(0, 154, 171);
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.navbar_menu {
+    display: flex;
+
+    list-style: none;
+
+
+
+    font-size: 20px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.navbar_join {
+    display: flex;
+
+    list-style: none;
+
+    padding-left: 0%;
+
+    font-family: 'Do Hyeon', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+
+.navbar_menu li{
+    padding: 8px 25px;
+}
+
+.navbar_join li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+    background-color: rgb(0, 154, 171);
+   
+    border-radius: 4px;
+    
+}
+
+.navbar_join li:hover {
+    background-color: rgb(0, 154, 171);
+   
+    border-radius: 4px;
+}
+
+.navbar_togleBtn{
+    
+    position: absolute;
+    right: 45px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+    
+    .navbar{
+        flex-direction: column;
+        padding:8px 24px;
+    }
+    
+    .navbar_menu, .navbar_join  {
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+    }
+
+
+
+    .navbar_menu li, .navbar_join li{
+        width: 100%;
+
+        text-align: center;
+    }
+
+    
+    .navbar_togleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active, .navbar_join.active {
+        display: flex;
+    }
+
+
+}
