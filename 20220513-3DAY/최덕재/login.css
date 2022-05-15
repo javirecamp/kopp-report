@@ -1,0 +1,94 @@
+.container{
+  display: block;
+
+  width: 750px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: lightgrey;
+}
+
+#login {
+  color: #555;
+  padding: 40px;
+}
+
+.head h2{
+  font-size: 32px;
+  text-align: center;
+}
+
+.id{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.id_icon{
+  font-size: 24px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.id_input{
+  width: 400px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.pw{
+  display: flex;
+  margin-bottom: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pw_icon{
+  font-size: 24px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pw_input{
+  width: 400px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.login_st{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 115px;
+
+  align-items: center;
+  justify-content: left;
+}
+
+.submit{
+  display: flex;
+
+  margin-right: 100px;
+  justify-content: right;
+}
+
+.login_submit{
+  background-color: #0076C0;
+  color: white;
+  font-size: 15px;
+}
+
+a{
+  margin-left: 100px;
+  color: cornflowerblue;
+}

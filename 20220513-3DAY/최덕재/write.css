@@ -1,0 +1,53 @@
+body{
+  background: lightgray;
+}
+
+.container{
+  display: block;
+
+  width: 900px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: white;
+}
+
+h1{
+  padding-top: 20px;
+}
+
+td{
+  text-align: center;
+}
+
+.title{
+  height: 70px;
+}
+
+.name{
+  height: 70px;
+}
+
+.input input{
+  width: 90%;
+  height: 60%;
+}
+
+.input textarea{
+  width: 90%;
+  height: 80%;
+}
+
+.write_submit{
+  display: flex;
+
+  justify-content: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.no{
+  padding-right: 20px;
+}

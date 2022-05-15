@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글쓰기</title>
+  <link rel="stylesheet" href="write.css">
+</head>
+<body>
+  <div class="container">
+    <h1>
+        글쓰기
+    </h1>
+    <hr>
+    <form method="get" action="#">
+      <table border="1" width="900" height="500">
+          <tr class="name">
+              <td>작성자</td>
+              <td class="input"><input type="text" name="writer"></td>
+          </tr>
+          <tr class="title">
+              <td>제목</td>
+              <td class="input"><input type="text" name="subject"></td>
+          </tr>
+          <tr class="text">
+              <td>내용</td>
+              <td class="input">
+                  <!--input 박스는 너무 작아서 textarea 사용-->
+                  <textarea name="content"></textarea>
+              </td>
+          </tr>
+      </table>
+      <div class="write_submit">
+          <div class="no">
+              <input type="submit" value="취소">
+          </div>
+          <div class="ok">
+              <input type="submit" value="글쓰기">
+          </div>
+      </div>
+    </form>
+  </div>
+
+
+</body>
+</html>

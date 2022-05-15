@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    <!-- 
+        14. style 파일을 따로 작성해서 import 하기
+            1) style /style
+            2) link rel="stylesheet" href="경로+style.css"
+     -->
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/5f3d37272a.js" crossorigin="anonymous"></script>
+    
+    <!-- defer : 밑데 body부분이 다 진행되고 나서 적용 -->
+    <script src="homepage.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+          <i class="fa-solid fa-house-user"></i>
+            <a href="#">My Homepage</a>
+        </div>
+        <ul class="navbar_menu">
+            <li> <a href="Login.html">로그인</a> </li>
+            <li> <a href="sign.html">회원가입</a> </li>
+            <li> <a href="list.html">글목록</a> </li>
+            <li> <a href="write.html">글쓰기</a> </li>
+        </ul>
+
+        <ul class="navbar_icons">
+            <li>
+                <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+        </ul>
+
+        <a href="#" class="navbar_togleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    
+    <div class="coin">
+      <i class="fa-solid fa-coins"></i>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-credit-card"></i>
+    </div>
+    <div class="car">
+      <i class="fa-solid fa-car-burst"></i>
+    </div>
+</body>
+</html>

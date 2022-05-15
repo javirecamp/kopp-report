@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sign.css">
+  <title>회원가입</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="context">
+      <header>
+        <h2>회원가입</h2>
+      </header>
+      <hr>
+      <form id="sign" action="" method="post">
+        <div>
+          <label for="id">아이디</label>
+          <br>
+          <input id="id" name="id" type="text" required autofocus>
+        </div>
+        <div>
+          <label for="pw">비밀번호</label>
+          <br>
+          <input id="pw" name="pw" type="text" required>
+        </div>
+        <div>
+          <label for="pw2">비밀번호 확인</label>
+          <br>
+          <input id="pw2" name="pw2" type="text" required>
+        </div>
+        <div>
+          <label for="name">이름</label>
+          <br>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="email">이메일</label>
+          <br>
+          <input id="email" name="email" type="email" required placeholder="000@0000.com">
+        </div>
+        <div>
+          <label for="phone">핸드폰 번호</label>
+          <br>
+          <input id="phone" name="phone" type="text" required placeholder="010-0000-0000">
+        </div>
+        <div>
+          성별 : 
+          <input id="m" name="m" type="radio" required>
+          <label for="m">남자</label>
+          <input id="f" name="f" type="radio" required>
+          <label for="f">여자</label>
+        </div>
+  
+        <hr>
+        <div>
+          <label>
+            <input type="checkbox">
+            광고 수신 및 이벤트 수신 동의하기
+          </label>
+        </div>
+        <hr>
+        <div class="submit">
+          <input class="sign_submit" type="submit" value="회원가입">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
