@@ -1,0 +1,156 @@
+/* 바깥 navbar 설정 */
+.navbar {
+    /* 플렉스 박스로 만듦 */
+    display: flex;
+
+    align-items: center;
+    /*  색상 변경*/
+    background-color: rgb(169, 166, 166);
+    /* 띄어쓰기 12px가 위아래고 10px가 양옆임*/
+    padding: 12px 10px;
+
+    justify-content: space-between;
+}
+
+/* 원하지 않는 공백 지움 */
+body {
+ margin: 0;
+}
+
+
+/* 
+앞에 작성했던 로그인,회원가입 등 목록들을 가로로 나열되게 설정 */
+.navbar_menu {
+    display: flex;
+    font-family: Georgia; /*MDN Reference에서 글씨 변경*/
+    list-style: none; /*메뉴 리스트에서 ..없애기*/
+    padding-left: 10; /*센터로 맞춰주기 위해 정렬*/
+
+}
+
+
+/* 마우스 올릴 때 배경색 변경*/
+.navbar_menu li:hover {
+    background-color: rgb(212, 212, 212)05);
+    /* 깍아서 둥그렇게 만든거=border-radiux */
+    border-radius: 3px;
+
+}
+
+/* 메뉴 아이템들이 다닥다닥 붙어있기 때문에
+스페이스를 넣어서 정렬을 해준다 */
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+
+/*로그인,회원가입,마이페이지,고객센터 목록 스타일 적용*/
+.navbar_icons {
+    list-style: none; /*리스트 스타일 설정 안함*/
+    color: rgb(16, 1, 1);
+    display: flex;   /*옆으로 나란히 정렬*/
+    padding-left: 0;
+    display: none;
+}
+
+
+
+
+.navbar_toggleBtn {
+  
+    position: absolute; /*움직이지 말고 그대로 
+    고정되어 있게 바꿔 봄*/
+
+    /* 오른쪽에 햄버거 로고가 위치하도록 설정 */
+    right: 35px;
+    font-size: 24px;
+    color: rgb(76, 67, 49);
+    /* 햄버거빵이 기본으로 안보이도록 해준다 */
+    display: none;
+
+}
+
+/* 
+반응형 웹사이트 스타일 적용
+@밑에 media screen은 외워서 적용.
+*/
+
+/* 화면 크기를 767로 바꿨다 */
+@media screen and (max-width:767px) {
+/* 화면 크기 줄였을 때 보이는 설정들 */
+    .navbar {
+        flex-direction: column; /*row보다는 column이 더 깔끔*/
+        padding: 8px 24px;
+
+    }
+
+    .navbar_menu {
+        flex-direction: row; /*줄였을 때도 그대로 화면이 row처럼 나오게 바꿔봄*/
+        align-items: center;
+        width: auto;  /*auto로 설정*/
+        display: none;
+
+    }
+
+    
+    /* 줄였을 때는 햄버거 
+    빵이 나오게 설정 */
+    .navbar_toggleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+}
+
+/*  상품 안내 크기 설졍 */
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+
+/* 보안 관련 안내 문구 설정 */
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* body 부분 서식 설정 */
+.main{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+/* 박스 스타일 설정 */
+.price-item{
+    width: 300px;
+    height: 300px;
+    border:1px solid black;
+    margin: 20px;
+    border-radius: 4px;
+    line-height: 53px;
+    border-bottom: 1px solid black;
+}
+
+.prices{
+    display:flex;
+}
+
+/* 배경 설정 */
+.price-item-title{
+    font-size:1.5rem;
+    background-color: rgb(222, 222, 218);
+    text-align: center;
+    height: 53px;
+}
+
+/* 박스 안에 디테일 부분 크기 설정 */
+.price-subitem{
+    font-size:1.2rem;
+}
+
+
+

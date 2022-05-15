@@ -1,0 +1,17 @@
+#btnJoin{
+    width:100px;
+    margin:auto;
+    display:block;
+}
+
+#goback{
+    width:100px;
+    margin:auto;
+    display:block;
+}
+
+.form-group{
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+}

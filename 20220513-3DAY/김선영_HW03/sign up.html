@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel ="stylesheet" href="sign up.css">
+    <script src ="poly.js" defer></script>
+</head>
+
+<body>
+    <form action="" method="get">
+
+        <!-- 한글/영어 선택 -->
+        <div class="select">
+            <select class="select-language">
+                <option>한국어</option>
+                <option>English</option>
+            </select>
+        </div>
+
+        <!-- 아이디 정보 입력 -->
+        <div class="form-group">
+        <label for="name">아이디: </label><BR>
+        <input id="name" name="name" type="text" placeholder="예시)홍길동" required><br>
+         </div>
+
+        <!-- 비번 -->
+        <div class="form-group">
+        <label for="pwd"> 비밀번호: <br> (8 characters minimum): </label><BR>
+        <input id="pwd" name="pwd" size=10 type="password" minlength="8" required><BR>
+        </div>
+        <!-- 이메일 정보 입력 -->
+        <div class="form-group">
+        <label for="email">이메일주소: </label><BR>
+        <input id="email" name="email" type="email" size="30" placeholder="kopo@kopo.ac.kr" required> <br>
+    </div>
+        <!-- 주소 정보 입력 -->
+        <div class="form-group">
+        <label for="address"> 주소: </label><BR>
+        <input id="address" name="address" type="text" placeholder="서울시 은평구" required><BR>
+        </div>
+        <!-- 휴대전화 입력 -->
+        <div class="form-group">
+        <label for="phone number">휴대전화</label><br>
+        <input id="phone number" name="phone number" type="number" placeholder="예시)010-1234-5678" required><Br>
+        </div>
+        <p></p>
+        <!-- 가입하기 버튼-->
+        <div class="btn_area">
+            <button type="button" id="btnJoin" onclick="location.href='newpage.html'">
+                <span>가입하기</span>
+            </button>
+        </div>
+        <p></p>
+        <button id="goback" onclick="history.back()">Go Back</button>
+        <a href="index.html"></a>
+    </form>
+</body>
+
+</html>

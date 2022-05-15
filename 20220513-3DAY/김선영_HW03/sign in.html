@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="sign in.css">
+    <script src="poly.js" defer></script>
+
+</head>
+
+<body>
+    <form action="" method="get">
+        <!-- 아이디 정보 입력 -->
+        <div class="form-group">
+            <label for="name">아이디: </label><BR>
+            <input id="name" name="name" type="text" placeholder="예시)홍길동" required><br>
+        </div>
+
+        <!-- 비번 정보 입력-->
+        <div class="form-group">
+            <label for="pwd"> 비밀번호: <br> (8 characters minimum) </label><BR>
+            <input id="pwd" name="pwd" size=10 type="password" minlength="8" required><BR>
+        </div>
+        
+        <p></p>
+        <!-- 로그인 버튼 -->
+        <div class="login-button">
+            <button id="btn" type="login" onclick="location.href='./index.html'">로그인 </button>
+            <p></p>
+        </div>
+    </form>
+
+</body>
+
+</html>
