@@ -1,0 +1,30 @@
+.signup {
+  /* 플렉스 박스로 만들어준다. 가로로 출력 */
+  display: flex;
+  /* 옆으로 정렬 + 콘텐츠 사이에 공백 제공 */
+  justify-content: space-between;
+  background-color: white;
+  /* 수직의 중앙으로 정렬. */
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.viewMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+/* 원하지 않는 공백 제거 */
+body {
+  margin: 0;
+}

@@ -1,0 +1,109 @@
+.navibar {
+  /* flex box 형태로 화면에 출력 */
+  display: flex;
+
+  /* 옆으로 정렬 : space-between으로 콘텐츠 사이에 스페이스를 넣어준다. */
+  justify-content: space-between;
+
+  /* 수직으로 중앙 정렬을 해보자. */
+  align-items: center;
+
+  /* 색상 입히기. */
+  background-color: #263343;
+
+  /* 화면 모서리에 딱 붙지 않도록 padding 값 설정 */
+  padding: 8px 12px;
+}
+
+/* 원하지 않는 공백은 모두 삭제 */
+body {
+  margin: 0;
+}
+
+/* 게시글 수정, 삭제 텍스트 색상을 흰색으로 변경 */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* navbar_menu 를 flex 박스로 변경해보자. */
+.navbar_menu {
+  display: flex;
+
+  /* list 목록 형태에서 bullet points 제거 */
+  list-style: none;
+
+  /* 메뉴가 자세히 보면 센터가 아닌 것을 알 수 있어서 맞춰주기 위해서 padding 적용 */
+  padding-left: 0;
+}
+
+/* 메뉴 아이템들 사이에 간격으로 떨어뜨리기 */
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+/* 메뉴에 마우스를 올리면 배경색이 변경됨 */
+.navbar_menu li:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+/* 기존 문서의 흐름에서 빠져나와서 지정된 위치에 정돈이 되게 하도록 적용 */
+.navbar_toggleBtn {
+  /* 원래 문서의 흐름을 벗어나는 방법: 포지션을 절대 경로로 지정 */
+  position: absolute;
+
+  /* 오른쪽의 적당한 위치에 위치하도록 해준다. */
+  right: 40px;
+  font-size: 24px;
+  color: #d49466;
+
+  /* 메뉴(햄버거)가 기본적으로는 안보임. 화면 사이즈를 축소시키면 보암.
+    저 밑에 .navbar_toggleBtn에서 정의해줌!
+    */
+  display: none;
+}
+
+/* 반응형 웹사이트 특징 : 
+    화면의 크기가 작아졌을 때 다르게 
+    적용할 스타일을 입힌다 (미디어 쿼리 사용)
+   */
+@media screen and (max-width: 770px) {
+  /* 맨 바깥쪽에 있는 .navibar를 row에서 column으로 바꿈. */
+  .navibar {
+    flex-direction: column;
+
+    /* 공간적 여유를 주기위해 padding */
+    padding: 8px 24px;
+  }
+
+  /* 메뉴 목록도 아래로 정렬되게 바꾼다. */
+  .navbar_menu {
+    /* 처음에 보여지지 않도록 해야한다. */
+    display: none;
+
+    flex-direction: column;
+
+    /* 반대축 아이템즈를 사용해서 center를 맞춰준다. */
+    align-items: center;
+
+    /* 너비 100%로 해주어서 정중앙으로 맞춰주기 */
+    width: 100%;
+  }
+
+  /* 너비 만큼 하이라이트가 생기도록 해준다. */
+  .navbar_menu li {
+    width: 100%;
+    /* 텍스트 가운데 정렬로 변경 */
+    text-align: center;
+  }
+
+  /* 화면 사이즈가 작아지면 메뉴(햄버거)가 보인다. */
+  .navbar_toggleBtn {
+    display: block;
+  }
+
+  .navbar_menu.active {
+    display: flex;
+  }
+}
