@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나몰 메인페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome 에서 아이콘 이미지 사용 -->
+    <script src="https://kit.fontawesome.com/5399d7b2e7.js" crossorigin="anonymous"></script>
+    <!-- 반응형 웹페이지 생성을 위한 js파일 생성 -->
+    <script src="poly.js" defer></script>
+    <!-- 구글 폰트 사용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 로고와 상단 바 명 생성 -->
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fa-brands fa-angellist"></i>
+            <a href="#">HANA MALL</a>
+        </div>
+    
+        <!-- 메뉴 목록 생성
+            href에 html 경로를 작성하여 해당 메뉴를 클릭하였을 때 메뉴에 해당하는
+            html 파일로 연결됨
+        -->
+        <ul class="navbar_menu">
+            <li>
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <a href="login.html">로그인</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-registered"></i>
+                <a href="join.html">회원가입</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-book-atlas"></i>
+                <a href="faq.html">문의</a>
+            </li>
+        </ul>
+        <!-- 메뉴 토글 버튼 및 아이콘 생성 -->
+        <a href="#" class="navbar_toglebtn">
+            <i class="fa-brands fa-elementor"></i>
+        </a>
+    </nav>
+
+    <button class="btn">
+        CLOTHES 
+    </button>
+
+    <button class="btn2">
+        SHOES
+    </button>
+
+    <button class="btn3">
+        FURNITURE 
+    </button>
+  
+</body>
+</html>

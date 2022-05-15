@@ -1,0 +1,39 @@
+body{
+    
+    margin: 0;
+}
+*{
+    font-family: 'Jua', sans-serif;
+}
+.navbar{
+    background-color: mediumseagreen;
+    padding: 40px 50px;
+    font-size: 50px;
+}
+.page_name{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    color:white ;
+    background-color: mediumseagreen;
+    margin: 0;
+}
+form{
+    padding-top: 30px;
+}
+li{
+    padding-top: 20px;
+    padding-bottom: 10px;  
+}
+
+li{
+    width: 1300px;
+    height: 30px;
+    border: 2px solid darkgreen;
+}
+a{
+    /* 텍스트에 있는 밑줄 삭제 */
+    text-decoration:none;
+    /* 텍스트 색상 변경 */
+    color: black;
+}

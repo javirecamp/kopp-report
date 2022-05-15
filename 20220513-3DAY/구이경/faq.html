@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <!-- style2.css -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- 구글 폰트 사용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 페이지별 메뉴 바 이름생성 -->
+    <div class="page_name">
+        <!-- center 태그 사용해서 중앙으로 위치하게 함 -->
+        <center>문의 목록</center>
+    </div>
+<div>
+    <!-- 리스트로 문의 목록 생성. 문의 사항 클릭하면, 해당 문의사항에 대한 답변이 나오도록 href 경로 설정을 함 -->
+    <li>
+        <a href="faq_deliver.html">배송 기간은 얼마나 걸리나요?</a><br>
+    </li>
+    <li>
+        <a href="faq_pay.html">결제수단을 변경하고 싶습니다.</a><br>
+    </li>
+    <!-- 문의 추가하기 버튼을 누르면 faq_write.html 페이지로 넘어간다.
+         button 태그와 href 사용
+    -->
+    <center>
+        <br>
+        <!-- 문의추가하기 버튼에 href로 경로를 설정하여 문의를 작성할 수 있는 페이지로 연결함  -->
+        <button type="button" onclick="location.href='faq_write.html'"> 문의 추가하기</button>
+        <button>삭제하기</button>
+    </center>
+</div>        
+</body>
+</html>

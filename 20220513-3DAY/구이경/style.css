@@ -1,0 +1,210 @@
+/* 모든 항목에 대하여 폰트 설정 */
+*{
+    font-family: 'Jua', sans-serif;
+}
+
+.navbar{
+    /* navbar에 있는 항목들 다 가로로 정렬시킴 */
+    display: flex;
+
+    /* 컨텐츠 사이에 중간중간 스페이스를 넣어줌 */
+    justify-content: space-between;
+
+    /* 수직 축으로 정렬 */
+    align-items: center;
+
+    /* 배경 색상*/
+    background-color: mediumseagreen;
+    padding: 40px 50px; 
+}
+
+body{
+    margin: 0;
+}
+
+
+/* a태그의 텍스트 밑줄과 색상을 없애기 */
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+/*  로고 색상 및 컬러 변경 */
+.navbar_logo{
+    font-size: 40px;
+    color: aliceblue;
+}
+
+/* navbar_menu 가로로 정렬 */
+.navbar_menu{
+    color: white;
+    display: flex;
+   
+    /* list에 있는 점 삭제 */
+    list-style: none;
+    
+    /*  메뉴가 자세히 보면 센터가 아닌 것을 알 수 있어서 맞춰주기 위해서  padding을 적용한다 */
+    padding-left: 0;
+}
+
+.navbar_menu li{
+    padding: 10px 12px;
+}
+
+/*  메뉴에 마우스를 올리면 배경색이 변경되도록 해보자 */
+
+.navbar_menu li:hover{
+    background-color: rgb(4, 53, 42);
+    /* 네모 모서리 깍기 */
+    border-radius: 4px;
+}
+
+/* 원래 문서의 흐름에서 빠져나와서
+지정된 위치에 정돈이 되게하도록 적용 */
+.navbar_toglebtn{
+    /* 원래 문서의 흐름을 벗어나는 방법 
+       포지션을 절대 경로로 지정해준다
+    */
+    position: absolute;
+    /* 오른쪽의 적당한 위치에 위치하도록 해준다 */
+    right:43px;
+
+    font-size: 45px;
+    color: rgb(4, 53, 42);
+
+
+    /* 메뉴 아이콘이 기본적으로 안보이도록 해준다 */
+    display: none;
+}
+
+
+/* 미디어 쿼리를 사용해서 반응형 웹사이트 생성*/
+
+@media screen and (max-width: 770px) {
+   
+    .navbar {
+         /* .navbar 을 row에서 컬럼으로 바꾼다. 아이콘을 누르면 navbar_menu 항목들이 밑으로 나오게됨 */
+        flex-direction: column;
+        
+        /* 공간에 여유를 주기 위해서 padding */
+
+        padding: 40px 24px;
+    }
+
+
+    .navbar_menu{
+        /* 처음에 안보이게 해야함. 토글버튼을 눌렀을 때 보이도록 하기 위해서 */
+        display: none;
+
+        flex-direction: column;
+
+        /* 반대쪽 아이템즈를 사용해서 center를
+        맞춰준다 */
+
+        align-items: center;
+
+
+        /* width 적용을 하겠습니다 */
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+
+        /* 자동으로 텍스트가 왼쪽으로 붙는다. 
+           text-align을 center로 해준다.
+        */
+         text-align: center;
+    }
+
+     /* 사이즈가 작아지면 메뉴 버튼이 보이게 한다. */
+     .navbar_toglebtn{
+        
+        display:block;
+    }
+
+    .navbar_menu.active{
+        display: flex;
+    }
+
+}
+ /* login 관련 css */
+ /* form{
+    position: absolute;
+    left: 43%;
+    bottom: 50%
+
+}; */
+span{
+    font-size: 50px;
+    color: rgb(7, 63, 51);
+}
+
+/* 메인 페이지 버튼 꾸미기 */
+.btn{
+    position: absolute;
+    bottom: 140px;
+    left: 10%;
+
+    background: none;
+
+    /* 경개선, 글자 크기, 글자색 지정 */
+    border: 5px solid rgb(7, 63, 51);
+    font-size: 35px;
+    color: rgb(7, 63, 51);
+
+    /* 패딩을 적용해준다 */
+    padding: 20px 40px;
+
+    /* 넓이를 지정해준다 */
+    width: 250px;
+    height: 250px;
+
+    /* 마우스를 올렸을 때 손가락 모양 */
+    cursor: pointer;
+}
+
+.btn2{
+    position: absolute;
+    bottom: 140px;
+    left: 40%;
+
+    background: none;
+
+    /* 경개선, 글자 크기, 글자색 지정 */
+    border: 5px solid rgb(7, 63, 51);
+    font-size: 35px;
+    color: rgb(7, 63, 51);
+
+    /* 패딩을 적용해준다 */
+    padding: 20px 40px;
+
+    /* 넓이를 지정해준다 */
+    width: 250px;
+    height: 250px;
+
+    /* 마우스를 올렸을 때 손가락 모양 */
+    cursor: pointer;
+}
+
+.btn3{
+    position: absolute;
+    bottom: 140px;
+    left: 70%;
+
+    background: none;
+
+    /* 경개선, 글자 크기, 글자색 지정 */
+    border: 5px solid rgb(7, 63, 51);
+    font-size: 35px;
+    color: rgb(7, 63, 51);
+
+    /* 패딩을 적용해준다 */
+    padding: 20px 40px;
+
+    /* 넓이를 지정해준다 */
+    width: 250px;
+    height: 250px;
+
+    /* 마우스를 올렸을 때 손가락 모양 */
+    cursor: pointer;
+}
