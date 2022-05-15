@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bulletinboard.css" />
+    <script
+      src="https://kit.fontawesome.com/012ae4665d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="poly.js" defer></script>
+    <title>게시판</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <i class="fa-solid fa-plane-departure"></i>
+        <!-- Main Page로 이동 -->
+        <a href="index.html"> Trip </a>
+      </div>
+      <!-- 기본 메뉴 -->
+      <ul class="navbar_menu">
+        <li>
+          <a href="">여행가기</a>
+        </li>
+        <li>
+          <a href="">숙소찾기</a>
+        </li>
+        <li>
+          <a href="">지도보기</a>
+        </li>
+        <li>
+          <a href="bulletinboard.html">게시판</a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-ellipsis"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- 홈으로 돌아가는 아이콘 -->
+      <div class="navbar_homeicon">
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- 테이블 -->
+    <div class="bulletinboard">
+      <h2>게시판</h2>
+      <hr width="700px" />
+      <table>
+        <!-- 테이블 헤더 -->
+        <thead>
+          <tr>
+            <th>글번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일자</th>
+          </tr>
+        </thead>
+        <!-- 테이블 바디 -->
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>테스트 글1</td>
+            <td>홍길동</td>
+            <td>2022/05/17</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>테스트 글2</td>
+            <td>이순신</td>
+            <td>2022/05/18</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>테스트 글3</td>
+            <td>세종대왕</td>
+            <td>2022/05/19</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- 글 작성, 수정, 삭제 옵션 -->
+      <span class="table_option">
+        <a class="table_write" href="write.html">작성하기</a>
+        <a class="table_update" href="">수정</a>
+        <a class="table_delete" href="">삭제</a>
+      </span>
+    </div>
+  </body>
+</html>
