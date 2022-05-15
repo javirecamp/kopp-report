@@ -1,0 +1,66 @@
+<!doctype HTML>
+
+<head>
+	<meta charset="UTF-8">
+	<title>네이버 로그인</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+	
+	<div class="main-container">
+		<div class="main-wrap">
+		<header>
+			
+            <div class="sel-lang-wrap">
+                <select class="lang-select">
+					<option>한국어</option>
+					<option>English</option>
+				</select>
+			</div>
+
+			<div class="logo-wrap">
+				<img src="./logo2.jpg">
+			</div>
+
+		</header>
+		
+        <section class="login-input-section-wrap">
+			
+            <div class="login-input-wrap">	
+				<input placeholder="Username" type="text"></input>
+			</div>
+
+			<div class="login-input-wrap password-wrap">	
+				<input placeholder="Password" type="password"></input>
+			</div>
+		<!-- login 버튼을 클릭하면 메인페이지로 이동되게 설정하고, signup 버튼을 클릭하면 회원가입 페이지로 이동되도록 설정한다. -->
+		<!-- 이때, button 태그의 onclick 옵션을 사용하여 href를 설정해준다. -->
+            <div class="login-button-wrap">
+				<button onclick="location.href='main.html'">login</button>
+				<button onclick="location.href='signup.html'">Sign up</button>
+			</div>
+			
+    
+        </section>
+
+		<section class="Easy-sgin-in-wrap">
+			<h2>Easier sign in</h2>
+		<!-- ul태그는 순서가 없는 리스트를 정의할 때 사용한다. 이 경우 자식 태그 li 태그를 사용하여 하위 항목을 구현한다. -->
+
+			<ul class="sign-button-list">
+				<li><button><i class="fas fa-qrcode"></i><span>Sign in with QR code</span></button></li>
+				<li><button><i class="fab fa-facebook-square"></i><span>Facebook</span></button></li>
+				<li><button><i class="fab fa-line"></i><span>line</span></button></li>
+			</ul>
+			<p class="forget-msg">Forgot your Username or Password? | Sign up</p>
+		</section>
+		
+		<footer>
+			<div class="copyright-wrap">
+			<span>	<img src="img/logo.png"> Copyright © NAVER Corp. All Rights Reserved.</span>
+			</div>
+		</footer>
+		</div>
+	</div>
+</body>

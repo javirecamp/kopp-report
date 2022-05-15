@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <table border="1" width=500>
+        <tr>
+            <th colspan="2">
+                자유게시판 글쓰기
+            </th>
+        </tr>
+
+        <tr>
+            <td width=50>
+                <select>
+                    <option>유머</option>
+                    <option>뉴스</option>
+                    <option>잡담</option>
+                </select>
+            </td>
+            <td >
+                <input type="text" placeholder="제목을 입력하세요."
+                maxlength=20
+                style="width:100%" >
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" height=400>
+                <textarea placeholder="내용을 입력하세요." style="width: 100%; height: 100%"></textarea>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" align=right>
+                <input type="button" value="글쓰기" onclick="location.href='bulletin.html'">
+                <input type="button" value="목록으로" onclick="location.href='bulletin.html'">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
