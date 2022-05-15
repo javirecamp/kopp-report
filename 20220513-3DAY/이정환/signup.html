@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <h2>Sign up</h2>
+    <form>
+      <div>
+        <label for="first-name">First name</label>
+        <input required id="first-name" type="text" placeholder="First name" />
+      </div>
+      <div>
+        <label for="last-name">Last name</label>
+        <input required id="last-name" type="text" placeholder="Last name" />
+      </div>
+      <div>
+        <label for="birth-date">Birth date</label>
+        <input required id="birth-date" type="date" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input required id="email" type="email" placeholder="Email" />
+      </div>
+      <div>
+        <label for="username">University</label>
+        <input
+          required
+          id="username"
+          type="text"
+          minlength="3"
+          placeholder="ㅁㅁ대학교"
+        />
+      </div>
+      <div>
+        <label for="birth-date">Graduation Date</label>
+        <input required id="birth-date" type="date" />
+      </div>
+      <div>
+        <label for="character"
+          >What is your personality? (introvert ~ extrovert)</label
+        >
+        <input required id="character" type="range" list="character-levels" />
+        <datalist id="character-levels">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="p-color">What is your personal color?</label>
+        <input required id="p-color" type="color" />
+      </div>
+      <div>
+        <label for="password">Password (Over 10 words)</label>
+        <input
+          required
+          id="password"
+          type="password"
+          minlength="10"
+          placeholder="Password"
+        />
+      </div>
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
