@@ -1,0 +1,10 @@
+for, foreach,
+for(let i = 0; i < length;i++) {
+}
+로또번호 만들고
+1 - 45까지 서로다른 6개 뽑는다.
+Math.random()
+DOMContentLoaded 이것을 사용해서
+페이지를 오픈하면 로또번호 뜨도록 하시오.
+index.html
+app.js
