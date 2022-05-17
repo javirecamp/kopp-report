@@ -1,0 +1,9 @@
+*{
+    font-size: 30px;
+    font-family: 'Do Hyeon', sans-serif;  
+}
+.navbar{
+    padding: 80px;
+    background-color: aquamarine;
+    color: black;
+}
