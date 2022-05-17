@@ -1,0 +1,72 @@
+body{
+    font-family: 'EliceDigitalBaeum_Bold';
+}
+
+h1{
+    text-align: left;
+}
+
+
+.ball {
+    float: left;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 28px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0px 0px 3px rgba(73, 57, 0, .8);
+    margin-right: 20px;
+    box-shadow: 3px 3px #c2c0c0;
+
+}
+
+.ball1 {
+    background: #fbd100;
+}
+.ball2 {
+    background: #69c8f2;
+}
+.ball3 {
+    background: #fd8181;
+}
+.ball4 {
+    background: rgb(194, 103, 255);
+}
+.ball5 {
+    background: #b0d840;
+}
+.ball6 {
+    background: #921667;
+}
+
+.ball7{
+ 
+    background-color: rgb(43, 19, 255);
+}
+
+.bonus{
+    float: left;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
