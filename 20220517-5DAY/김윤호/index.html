@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="here"></h1>
+    <script>
+        let here = document.getElementById("here");
+        let list = [];
+
+        while (list.length <6) {
+            let check = true;
+            let selectNumber = Math.floor(Math.random()*45+1);
+            for(let lotto in list){
+                if(lotto == selectNumber){
+                    check = false;
+                }
+            }
+            if(check){
+                list.push(selectNumber);
+            }
+        }
+
+        here.innerHTML = `로또번호 : ${list}`;
+    </script>
+</body>
+</html>
