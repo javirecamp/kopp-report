@@ -1,0 +1,33 @@
+.header{
+    text-align:center;
+    font-size:40px;
+    border:black;
+    background-color:skyblue;
+    border-style:solid;
+    font-weight:bold;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.main{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size:24px; 
+    padding:80px 50px;
+
+   
+ }
+
+#start{
+    font-size:24px;
+}
+.table caption{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size:50px;
+}
+.table{
+    text-align:center;
+}
