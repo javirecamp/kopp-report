@@ -1,0 +1,46 @@
+.lotto{
+    margin:0px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#lotto{
+    margin:0px;
+    text-align: center;
+    font-size: 17px;
+    justify-content: center;
+    /* 수직 상태에서도 중앙에 위치 */
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* body에 background 색상을 지정 */
+
+body{
+    background-color: bisque;
+
+    /* 현재 상태(수평)에서 중앙에 위치 */
+    display: flex;
+    justify-content: center;
+
+    /* 수직 상태에서도 중앙에 위치 */
+    align-items: center;
+    height:100vh;
+ 
+
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:100px;
+}
