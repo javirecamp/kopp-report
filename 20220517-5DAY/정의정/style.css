@@ -1,0 +1,22 @@
+body {
+    background-color: #78a520;
+    padding: 8px 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 70px;
+    align-items: center;
+}
+
+#start {
+    background-color: #cedbb4;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
