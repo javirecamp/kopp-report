@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#start{
+    
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.btn{
+
+    width: 70px;
+    height: 40px;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line1{
+    margin-bottom: 10px;
+}
+.line2{
+    margin-bottom: 10px;
+}
+.line3{
+    margin-bottom: 10px;
+}
+.line4{
+    margin-bottom: 10px;
+}
+
