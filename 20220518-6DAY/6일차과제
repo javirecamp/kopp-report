@@ -1,0 +1,18 @@
+오늘의 과제 
+- 포커카드를 만드세요.
+- A ~ 13 : 13개
+- Spade, Heart, Diamond, Clova 4개
+- 출력화면 
+- cardCase = [;d,djlkdjlk];
+- console.log(cardCase);
+HTML 화면에 보여지는 것은 본인의 자유이고
+console.log()로 출력했을때 아래와 같이 출려되면 됨.
+웹 화면에 띄우는건 안해도 되고, 하고싶으면 해도 되는 옵션!!
+
+[HA],H2,H3,H4,H5,H6,H7,H8,H9,HT,HJ,HQ,HK
+HA,H2,H3,H4,H5,H6,H7,H8,H9,HT,HJ,HQ,HK
+HA,H2,H3,H4,H5,H6,H7,H8,H9,HT,HJ,HQ,HK
+HA,H2,H3,H4,H5,H6,H7,H8,H9,HT,HJ,HQ,HK] 
+총 52개
+
+
