@@ -1,0 +1,15 @@
+body {
+    margin: 0 0;
+}
+
+#pokerArea {
+    width: 200px;
+    height: 500px;
+}
+
+#pokerNumber {
+    margin: 0px 0px;
+    padding: 0;
+    width: 100px;
+    color: blue;
+}
