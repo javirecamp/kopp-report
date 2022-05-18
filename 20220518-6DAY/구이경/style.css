@@ -1,0 +1,45 @@
+/* 페이지 내에 여백 없애기 */
+html,body{
+    margin: 0;
+    padding: 0;
+}
+/* 헤드라인 색 지정 */
+h1{
+    margin: 0;
+    background-color: black;
+}
+/* main에 배경 사진 넣기 */
+#main{
+    /* url을 써서 사진 넣기, no-repeat해서 사진이 반복하지 않게 설정 */
+    background: url(poker.png) no-repeat;
+    width: 100vw; 
+    height: 100vh;
+
+    /* 사진화면에 꽉 채우게 설정 */
+    background-size: cover; 
+    background-position: center;
+}
+#contents{
+    /* 절대적인 위치 지정 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* X축 Y축 변경해서 첫 시작 부분을 변경 */
+    transform: translate(-50%,-50%);
+    
+    color: white;
+    /* 텍스트를 중앙으로 정렬 시킴 */
+    text-align: center;
+}
+#card{
+    color: black;
+    /* 텍스트 뒤에있는 백그라운드 박스 만들기 */
+    background-color: white;
+    padding-top: 10px;
+    width: 485px;
+    height: 80px;
+    display: inline-block;
+    border: 1px solid #111;
+    /* 박스의 크기가 넘어가면 줄바꿈을 하게 설정 */
+    word-wrap: break-word;
+}
