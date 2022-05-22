@@ -1,0 +1,42 @@
+/* 간단하게 꾸밈작업(배경색 및 글자 위치) */
+
+html {
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh; 
+    /* vw와 vh는 %의 느낌과 유사 */
+}
+
+head {
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    width : 100%;
+    position: absolute;
+    top : 40%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+/* index.html에서 id로 되어있는 부분은 앞에 #을 붙인다(class일 경우에는 .을 붙인다.) */
+#start {
+    position: absolute;
+    width : 100%;
+    top : 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
