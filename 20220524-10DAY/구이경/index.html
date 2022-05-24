@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript를 mvc 형태로 만들어보기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <!-- 검색 헤더 생성 -->
+            <h2 class="container">검색</h2>
+            <!-- h2.container + enter -->
+
+        </header>
+
+        <div class="container">
+            <!-- form 태그: 웹페이지에서의 입력 양식을 나타내는 태그 -->
+            <form> 
+                <!-- input 태그: 사용자가 양식을 입력하기 위한 태그 -->
+                <input type="text" placeholder="검색어를 입력해주세요" autofocus>
+                <!-- 버튼 타입: reset // 누르면 그동안 썼던게 모든 항목이 사라짐 -->
+                <button type="reset" class="btn-reset"></button> 
+            </form>
+            <div class="content">
+                <!-- SearchResultView.js 파일에서 사용 -->
+                <div id="search-result"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
