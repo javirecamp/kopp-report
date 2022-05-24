@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255,206,133);
+    font-family: 'Jua', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: gray;
+}
+
+.stop-watch-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stop-watch{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.btn-box{
+    display: flex;
+}
+
+.btn-box button{
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: rgb(252,81,81);
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-box button:hover{
+    width: 70px;
+    height: 30px;
+    color: rgb(252,81,81);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.timer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.hour-box{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-box input{
+    border: solid 2px gray;
+    border-radius: 7px;
+    width: 50px;
+    height: 70px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.minute-box{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.second-box{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.devide{
+    font-size: 60px;
+    margin-bottom: 9px;
+}
+
+.timer-btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-btn-box button{
+    width: 70px;
+    height: 30px;
+    margin: 20px;
+    color: white;
+    background-color: rgb(252,81,81);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.timer-btn-box button:hover{
+    width: 70px;
+    height: 30px;
+    margin: 20px;
+    color: rgb(252,81,81);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+
+
