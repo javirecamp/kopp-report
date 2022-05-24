@@ -1,0 +1,32 @@
+* MVC란?
+M(MODEL)
+V(VIEW)
+C(CONTROLLER)
+
+Model: 데이터 객체를 저장하는 창고로 쓰이며, View나 Controler에 대해서 전혀 신경 쓸 필요가 없고, 
+모델은 데이터, 데이터와 직접적으로 관련이 있는 로직만을 포함하는 것이 좋다. 
+즉, "이벤트 처리 코드", "뷰 템플릿" 과 같이 모델과 관련 없는 로직등은 포함하지 말아야 한다.
+
+View: 사용자와의 상호작용을 맡는 계층이며, 보통 HTML, CSS, 자바스크립트 템플릿으로 View를 구성한다. 
+Model과 마찬가지로 View 또한, 에플리케이션의 다른 부분(계층)과 분리되어야 한다.(Controler나 Model 객체와 독립적이어야 한다는 뜻이다.)
+
+Controler: Model과 View 사이의 접착제 역활을 하며, 보통 이벤트를 통해 갱신된 데이터를 Model에 적용하고 그 결과를 View에 반영 시킨다. 
+또한, 보통 Controler객체 초기화(init)시 각 이벤트 리스너를 추가시키는 로직을 구성한다.
+
+
+역할 정의
+* Model
+데이터 갱신 추가 변경 제거 획득
+데이터를 획득하는 로직 Ajax LocalStorage 이 포함될 수 있음
+Controller에서 만들어서 줄 수도 있음
+
+* Controller
+- 전체적인 목표는 Model과 View 간 변경사항을 연결하는 것
+event handler Listener 구현체 만들기
+View가 렌더링을 잘 할 수 있도록 데이터 가공 viewModel
+데이터 변경이 필요한 경우는 Model 에 전달
+
+* View
+DOM조작 (View 변경) 에만 집중
+데이터를 받아 그대로 DOM에 추가
+Add Event Listener
